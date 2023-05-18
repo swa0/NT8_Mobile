@@ -1,0 +1,430 @@
+//跑馬燈
+.marqueeBox {
+    width: 94%;
+    height: 7.8vw;
+    background: $marqueeBG;
+    border-radius: 30px;
+    border: 1px solid $mainBorder_2;
+    box-shadow: 0 0 5px 2px $marqueeBoxshadow;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0 auto 2.4vw;
+
+    &.inner {
+        margin: 5px auto;
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 107%;
+            height: 12.25vw;
+            background: $mainBG_2;
+            position: absolute;
+            top: -1.94vw;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+    }
+
+    .marquee_ic {
+        width: 7.9%;
+        height: 88%;
+        background: $marqueeIcon;
+        border-radius: 30px;
+        position: relative;
+        z-index: 1;
+        margin: 0 0 0 0.5vw;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 3.58vw;
+            height: 3.58vw;
+        }
+    }
+
+    .marquee {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+        pre {
+            display: inline-block;
+            font-size: 1rem;
+            font-weight: bold;
+            color: $marqueeColor;
+            animation: marquee 10s linear 0s infinite;
+            padding-left: 100%;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    }
+
+    span {
+        width: 7.9%;
+        height: 88%;
+        background: $marqueeIcon;
+        border-radius: 0 30px 30px 0;
+        margin: 0 0.5vw 0 0;
+    }
+}
+
+//登入區
+.memberArea {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0 4vw;
+
+    .loginArea {
+        width: 48%;
+        height: 100%;
+        display: none;
+        @include loginArea;
+        position: relative;
+
+        &.display {
+            display: flex;
+        }
+
+        .state {
+            color: $title_2;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            position: absolute;
+            top: 1.6vw;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .loginBtn {
+            width: 50%;
+            height: 100%;
+            @include loginBtn;
+            margin-right: 2vw;
+            display: none;
+
+            &.display {
+                display: flex;
+            }
+        }
+
+        .signupBtn {
+            width: 50%;
+            height: 100%;
+            @include signupBtn;
+            margin-right: 0;
+            display: none;
+
+            &.display {
+                display: flex;
+            }
+
+        }
+    }
+
+    //大登入按鈕登入後樣式
+    .alLogin {
+        width: 38%;
+        height: 100%;
+        @include loginArea;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5vw 1.5vw 1vw;
+        display: none;
+
+        &.display {
+            display: flex;
+            padding: 3.5vw 1.5vw 1vw;
+        }
+
+        ul {
+            width: 100%;
+            height: auto;
+
+            li {
+                width: auto;
+                height: 1.76vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 0.44vw;
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                &.amount {
+                    width: auto;
+                    max-width: 33.76vw;
+                    height: auto;
+                    color: $money_Sp;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-top: 3vw;
+                    @include textHidden;
+                }
+
+                .name {
+                    width: auto;
+                    max-width: 22.7vw;
+                    height: auto;
+                    color: $mainWord_3;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    @include textHidden;
+                }
+
+                .lv {
+                    width: auto;
+                    height: 5.5vw;
+                    @include operateLV;
+                    margin-left: 0.44vw;
+                }
+            }
+        }
+    }
+
+    //轉存提+vip
+    .operate {
+        width: 63%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &.login {
+
+            .btnBox {
+                padding: 0 0 0 4%;
+
+                button {
+                    font-size: 0.9rem;
+
+                    &:nth-of-type(3) {
+                        margin-right: 1vw;
+                    }
+                }
+
+                .vipBtn {
+                    display: block;
+                }
+            }
+        }
+
+        .btnBox {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 2vw;
+
+            button {
+                width: 33%;
+                height: 100%;
+                @include operateBtn;
+                margin-right: 1vw;
+
+                
+                &:nth-of-type(2) {
+
+                    i {
+                        background-position-x: 33%;
+                    }
+                }
+                    
+                &:nth-of-type(3) {
+                    margin-right: 0;
+
+                    i {
+                        background-position-x: 66%;
+                    }
+                }
+
+                &.vipBtn {
+                    display: none;
+                    font-size: 0.9rem;
+                    margin-right: 0;
+
+                    i {
+                        background-position-x: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//遊戲區
+.homeCenter {
+    width: 100%;
+    height: auto;
+    // height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vw 4vw;
+    margin-top: 2vw;
+    // overflow: hidden;
+
+    //遊戲種類選單
+    .gameList {
+        width: auto;
+        height: auto;
+        // height: 100%;
+
+        ol {
+            width: auto;
+            height: auto;
+            // height: 100%;
+            // overflow-y: auto;
+            flex-shrink: 0;
+            margin-right: 3vw;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 25vw;
+                height: 21vw;
+    
+                &.active {
+    
+                    .allOutter {
+                        background: $gameListBtn_ActiveBG;
+                        box-shadow: none;
+
+                            p {
+                                color: $gameListBtn_ActiveWord;
+                            }
+
+                            div {
+                                background: $mainBG_1;
+                                
+                            i {
+                                background-position-y: 100%;
+                            }
+                        }
+                    }
+                }
+    
+                .allOutter {
+                    width: 100%;
+                    height: 90%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    @include gameListBG;
+    
+                    p {
+                        margin-top: 1.2vw;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                        color: $gameListBtn_Word;
+                    }
+
+                    div {
+                        padding: 1.5vw;
+                        background: $mainBG_3;
+                        border-radius: 50%;
+
+                        i {
+                            display: block;
+                            width: 4.9vw;
+                            height: 4.9vw;
+        
+                            &.hot_ic {
+                                background-position-x: 0;
+                                transform: scale(1.5);
+                            }
+                            &.sport_ic {
+                                background-position-x: 12.5%;
+                            }
+                            &.live_ic {
+                                background-position-x: 25%;
+                            }
+                            &.slot_ic {
+                                background-position-x: 37.5%;
+                            }
+                            &.lottery_ic {
+                                background-position-x: 50%;
+                            }
+                            &.fish_ic {
+                                background-position-x: 62.5%;
+                            }
+                            &.board_ic {
+                                background-position-x: 75%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //遊戲選擇
+    .gameBox {
+        width: 100%;
+        height: auto;
+        display: none;
+        // overflow-y: auto;
+
+        &.display {
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            width: 100%;
+            height: 45vw;
+            position: relative;
+            margin-bottom: 8vw;
+
+            p {
+                position: absolute;
+                width: 100%;
+                bottom: -6vw;
+                left: 0;
+                @include gameBoxWord;
+            }
+        }
+    }
+}
+
+//goTop
+.goTop {
+    width: 16vw;
+    height: 16vw;
+    @include goTop;
+    position: fixed;
+    right: 2.5vw;
+    bottom: 18vw;
+
+    p {
+        color: $goTop_Color;
+        font-size: 3vw;
+        font-weight: bold;
+    }
+
+    i {
+        width: 6vw;
+        height: 6vw;
+        margin-bottom: 5px;
+    }
+}

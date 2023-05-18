@@ -1,0 +1,315 @@
+//站內信上選項
+.topList {
+    width: 100%;
+    height: auto;
+    background: $mainBG_1;
+
+    ul {
+        width: 100%;
+        height: auto;
+        display: flex;
+
+        li {
+            width: 50%;
+            height: 10.3vw;
+            box-sizing: border-box;
+            border-bottom: solid 2px transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: bold;
+            color: $choose_Word;
+
+            &.active {
+                color: $choose_ActiveWord;
+                border-color: $choose_Border;
+            }
+        }
+    }
+}
+
+//內容
+.mailBody {
+    background: $mainBG_2;
+
+    &.normal {
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        //中選項
+        .subClass {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 2.5vw 3.65vw;
+            background: $mainBG_2;
+
+            ul {
+                width: 100%;
+                height: auto;
+                display: flex;
+
+                li {
+                    width: 50%;
+                    height: 10.67vw;
+                    @include bigGrayBtn;
+
+                    &:last-child {
+                        border-radius: 0 5px 5px 0;
+                    }
+                }
+            }
+        }
+
+        //編輯
+        .editBox {
+            width: 100%;
+            height: auto;
+            padding: 16px;
+            box-sizing: border-box;
+            justify-content: space-between;
+            display: none;
+
+            &.display {
+                display: flex;
+            }
+
+            .all {
+                display: flex;
+                align-items: center;
+                color: $title_2;
+                font-size: 1rem;
+                font-weight: bold;
+
+                input {
+                    margin-right: 3.65vw;
+                    @include checkBox;
+                }
+            }
+
+            .modify {
+
+                button {
+                    width: 82px;
+                    height: 7vw;
+                    @include linearBgBtn_Color1;
+                    font-size: 0.85rem;
+
+                    &.delete {
+                        @include linearBgBtn_Color2;
+                        font-size: 0.85rem;
+                        margin-left: 2.5vw;
+                    }
+                }
+            }
+        }
+
+        //內容
+        .mailBox {
+            width: 100%;
+            height: calc(100vh - 200px);
+            overflow-y: auto;
+
+            &.editing {
+                height: calc(100vh - 260px);
+
+                .title,.textBox {
+                    padding: 0 7.4vw 0 50px;
+                }
+
+                .inputBox {
+                    display: flex;
+                }
+            }
+            
+            &.system,&.personal {
+                display: none;
+
+                &.display {
+                    display: block;
+                }
+            }
+
+            ul {
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                padding: 0.15vw 4.65vw;
+
+                li {
+                    width: 100%;
+                    height: 22vw;
+                    margin-bottom: 2.5vw;
+                    @include mailWrap;
+
+                    .title {
+                        width: 100%;
+                        height: 39%;
+                        box-sizing: border-box;
+                        padding: 0 7.4vw;
+                        display: flex;
+                        align-items: flex-end;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        color: $title_1;
+                    }
+
+                    .textBox {
+                        width: 100%;
+                        height: 60%;
+                        display: flex;
+                        box-sizing: border-box;
+                        padding: 0 7.4vw;
+                        align-items: center;
+                        position: relative;
+
+                        p {
+                            width: 100%;
+                            height: auto;
+                            @include textHidden;
+                            color: $mainWord_3;
+                            font-size: 0.89rem;
+                            font-weight: bold;
+                        }
+
+                        .date {
+                            position: absolute;
+                            top: 0;
+                            right: 7.4vw;
+                            font-size: 0.85rem;
+                            font-weight: bold;
+                            color: $title_Time;
+                        }
+                    }
+
+                    .inputBox {
+                        display: none;
+                        width: 50px;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        align-items: center;
+                        justify-content: center;
+
+                        input {
+                            @include checkBox;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.post {
+        display: none;
+
+        &.display {
+            display: block;
+        }
+
+        //中選項
+        .subClass {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 2.5vw 3.65vw;
+            background: $mainBG_2;
+
+            ul {
+                width: 100%;
+                height: auto;
+                display: flex;
+
+                li {
+                    width: 34%;
+                    height: 10.67vw;
+                    @include bigGrayBtn;
+                    
+                    &:nth-of-type(1) {
+                        border-radius: 5px 0 0 5px;
+                    }
+
+                    &:last-child {
+                        border-radius: 0 5px 5px 0;
+                        border-width: 1px 1px 1px 0;
+                    }
+                }
+            }
+        }
+
+        //內容
+        .mailBox {
+            width: 100%;
+            height: calc(100vh - 200px);
+            overflow-y: auto;
+
+            &.hot,&.nor,&.dep {
+                display: none;
+
+                &.display {
+                    display: block;
+                }
+            }
+
+            ul {
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                padding: 0.15vw 4.65vw;
+
+                li {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 2.5vw;
+                    @include mailWrap;
+
+                    p {
+                        width: 100%;
+                        height: auto;
+                        box-sizing: border-box;
+                        padding: 5vw 7.4vw;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: $title_1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//內文
+.mailContent {
+    width: 90%;
+    height: calc(100vh - 135px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 4vw;
+    border-radius: 2.5vw;
+    margin: 3.65vw auto;
+    box-shadow: 0 2px 4px 0 $boxshadow_1;
+    background: $mainBG_1;
+    border: solid 1px $mainBorder_2;
+
+    .title {
+        margin: 2.5vw 0;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: $title_1;
+    }
+
+    .msg {
+        line-height: 5vw;
+        font-size: 0.89rem;
+        font-weight: bold;
+        color: $mainWord_3;
+    }
+}

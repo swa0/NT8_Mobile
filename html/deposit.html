@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <i class="back_arrow" onclick="window.location.href='./wallet.html'"></i>
+            <div class="title">存款專區</div>
+            <button class="detailBtn" onclick="window.location.href='./help_new_deposit.html'">教學</button>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <div class="marqueeBox inner">
+            <i class="marquee_ic"></i>
+            <div class="marquee">
+                <pre>公告測試公告測試公告測試</pre>
+            </div>
+            <span></span>
+        </div>
+        <!--存款-->
+        <div class="depositWrap">
+            <div class="depList display">
+                <p class="title">選擇支付方式</p>
+                <div class="listWrap">
+                    <ul>
+                        <li class="active">
+                            <i class="card_ic"></i>
+                            <p>銀行卡轉帳</p>
+                        </li>
+                        <li>
+                            <i class="atm_ic"></i>
+                            <p>ATM</p>
+                        </li>
+                        <li>
+                            <i class="shop_ic"></i>
+                            <p>超商代碼</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="depContent card display">
+                <p class="title"> 
+                    <span>※</span>
+                    選擇銀行
+                    <!-- <span class="remind">僅接受綁定銀行轉入之款項</span> -->
+                </p>
+                <select>
+                    <option value="">上海銀行</option>
+                    <option value="">上海銀行</option>
+                    <option value="">上海銀行</option>
+                </select>
+                <span class="remind">
+                    尾號:
+                    <span class="num">41879</span>
+                </span>
+                <p class="title">
+                    <span>※</span>
+                    存款金額
+                </p>
+                <input type="text" placeholder="請輸入存款金額">
+                <span class="remind">單筆存款金額需介於 0 - 不限制</span>
+                <button class="check">立即存款</button>
+            </div>
+            <div class="depContent atm">
+                <p class="title">
+                    <span>※</span>
+                    選擇通道
+                </p>
+                <select>
+                    <option value="">虛擬銀行</option>
+                    <option value="">虛擬銀行</option>
+                    <option value="">虛擬銀行</option>
+                </select>
+                <select>
+                    <option value="">永豐銀行</option>
+                    <option value="">永豐銀行</option>
+                    <option value="">永豐銀行</option>
+                </select>
+                <p class="title">
+                    <span>※ </span>
+                    存款金額
+                </p>
+                <input type="text" placeholder="請輸入充值金額">
+                <span class="remind">單筆存款金額需介於 $1,000 - $30,000</span>
+                <button class="check" disabled>立即存款</button>
+            </div>
+            <div class="depContent shop">
+                <p class="title">
+                    <span>※</span>
+                    選擇帳號
+                </p>
+                <select>
+                    <option value="">線上商店</option>
+                    <option value="">線上商店</option>
+                    <option value="">線上商店</option>
+                </select>
+                <p class="title">
+                    <span>※ </span>
+                    存款金額
+                </p>
+                <input type="text" placeholder="請輸入存款金額">
+                <span class="remind">單筆存款金額需介於 0 - 不限制</span>
+                <button class="check">立即存款</button>
+            </div>
+            <div class="depContent already">
+                <ul>
+                    <li>
+                        <p class="title">存款到下列帳號</p>
+                    </li>
+                    <li>
+                        <p class="smallTitle">銀行</p>
+                        <p>測試銀行-分行</p>
+                    </li>
+                    <li>
+                        <p class="smallTitle">銀行帳號</p>
+                        <p>
+                            852852
+                            <button class="copy">複製</button>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="checkBox">
+                            <p>
+                                $50000
+                                <button class="copy">複製</button>
+                                <button class="change">修改</button>
+                            </p>
+                            <p class="remind">(轉帳金額務必與訂單金額一致唷!!)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <button class="check">確認轉帳</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="remindBox">
+                <p class="title">重要提醒</p>
+                <p>1.系統將發配一組專屬交易單號，請至您選擇的超商門市進行繳費。</p>
+                <p>
+                    <span class="sp">2.繳費完成後請妥善保管交易收據，以便查證。</span>
+                </p>
+                <p>3.為了加快上分速度，請至交易紀錄上傳交易成功的明細。</p>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter displa">
+        <!--無信用卡提示-->
+        <div class="jumpWindow plsGo displa">
+            <div class="title">提示</div>
+            <div class="content">
+                <p>無可使用的銀行卡，</p>
+                <p>請前往銀行卡綁定</p>
+            </div>
+            <div class="btnBox">
+                <button class="close">確認</button>
+            </div>
+        </div>
+        <!--loading-->
+        <div class="jumpWindow loading">
+            <div class="title">提示</div>
+            <div class="content">
+                <div class="img"></div>
+                <p>loading...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

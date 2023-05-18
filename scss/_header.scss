@@ -1,0 +1,106 @@
+//header
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+
+    //content
+    .content {
+        width: 100%;
+        height: 12vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $header_BG;
+        position: relative;
+        overflow: hidden;
+        padding: 0 3.6vw;
+
+        .title {
+            width: 70%;
+            height: auto;
+            color: $title_Header;
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 0.2vw;
+            @include textHidden;
+            margin: 0 auto;
+        }
+
+        .back_arrow {
+            width: 2.6vw;
+            height: 4.85vw;
+            position: absolute;
+            left: 4.4vw;
+        }
+
+        .refresh_ic {
+            width: 4.9vw;
+            height: 4.9vw;
+            position: absolute;
+            right: 4.4vw;
+        }
+
+        .detailBtn {
+            width: auto;
+            height: 7.25vw;
+            position: absolute;
+            right: 4.4vw;
+            @include mainBtn_2;
+            border-radius: 5px;
+            font-size: 3.5vw;
+            padding: 0 1.9vw 0.5vw;
+
+            &.edit {
+                display: none;
+
+                &.display {
+                    display: block;
+                }
+            }
+        }
+
+        .editBtn {
+            width: auto;
+            height: 7.25vw;
+            position: absolute;
+            right: 4.4vw;
+            @include mainBtn_2;
+            font-size: 3.5vw;
+            padding: 0 1.9vw 0.5vw;
+            white-space: nowrap;
+            border-radius: 5px;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+        }
+
+        .inviteBtn {
+            width: auto;
+            height: 8vw;
+            @include invite;
+        }
+
+        .lang {
+            width: 21vw;
+            height: 100%;
+            @include lang;
+            position: absolute;
+            right: 4.4vw;
+        }
+
+        &.helpPage {
+            display: none;
+
+            &.display {
+                display: flex;
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+//轉帳
+.transWrap {
+    @include bgStyle_1;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 3.65vw 0;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 29vw;
+        background: $mainBG_1;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    .wallet {
+        width: 92vw;
+        height: auto;
+        @include wordBox;
+        box-sizing: border-box;
+        padding: 2.9vw 3.65vw 2.5vw;
+        border-radius: 5px;
+        margin: 0 auto 3.65vw;
+        display: flex;
+        position: relative;
+        z-index: 5;
+
+        .helf {
+            width: 100%;
+            height: 15.5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .title {
+                display: flex;
+                align-items: center;
+                font-size: 0.89rem;
+                letter-spacing: 1px;
+                font-weight: bold;
+                color: $title_1;
+
+                i {
+                    width: 4.27vw;
+                    height: 4.27vw;
+                    margin-left: 2.5vw;
+                }
+                
+                button {
+                    width: 18.93vw;
+                    height: 6.13vw;
+                    @include mainBtn_4;
+                    font-size: 0.85rem;
+                    margin-left: 2.5vw;
+                }
+            }
+
+            .amount {
+                font-size: 1.7rem;
+                color: $money;
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .transBox {
+        width: 100%;
+        height: auto;
+        background: $mainBG_1;
+        padding: 0.5vw 3.55vw 2.5vw;
+        box-sizing: border-box;
+
+        .selectBox {
+            width: auto;
+            height: auto;
+            position: relative;
+            margin-bottom: 2.9vw;
+            padding: 1vw 0 0;
+
+            select {
+                width: 100%;
+                height: 10.3vw;
+                @include mainSelect;
+                padding-left: 12vw;
+                font-size: 0.89rem;
+            }
+
+            .smallWord {
+                color: $title_1;
+                font-size: 0.85rem;
+                font-weight: bold;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 4vw;
+            }
+
+            span {
+                @include arrow;
+                position: absolute;
+                top: 48%;
+                right: 3.65vw;
+                transform: translateY(-50%);
+            }
+        }
+
+        input {
+            width: 100%;
+            height: 10.3vw;
+            margin-bottom: 2.9vw;
+            @include mainInput;
+        }
+
+        .check {
+            width: 100%;
+            height: 10.3vw;
+            @include mainBtn_4;
+        }
+    }
+
+    .forPlatform {
+        padding-bottom: 3.65vw;
+        display: none;
+        background: $mainBG_1;
+        margin-top: 2.5vw;
+
+        &.display {
+            display: block;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 3.65vw 3.65vw 0;
+            margin-bottom: 11px;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: $title_Time;
+            font-weight: bold;
+
+            // button {
+            //     width: 18.93vw;
+            //     height: 6.13vw;
+            //     @include buttonStyle_2;
+            //     font-size: 0.85rem;
+            // }
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3vw 2vw;
+            width: 100%;
+            box-sizing: border-box;
+            max-height: 75.16vw;
+            padding: 0 3.6vw;
+            overflow: hidden;
+
+            &.active {
+                max-height: none;
+            }
+
+            li {
+                width: auto;
+                min-height: 16.53vw;
+                box-sizing: border-box;
+                @include platformBtn;
+                padding: 2.5vw;
+
+                div {
+                    font-size: 0.85rem;
+                    letter-spacing: 1px;
+                    color: $title_2;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+
+                    // .smallInfo {
+                    //     display: block;
+                    //     width: 5vw;
+                    //     height: 5vw;
+                    //     margin-left: 5px;
+                    //     position: relative;
+                    //     opacity: 0;
+                    //     pointer-events: none;
+
+                    //     &.display {
+                    //         opacity: 1;
+                    //         pointer-events: visible;
+                    //     }
+
+                    //     &:hover,&:active,&.active {
+
+                    //         .inner {
+                    //             display: block;
+                    //         }
+                    //     }
+
+                    //     .inner {
+                    //         display: none;
+                    //         width: auto;
+                    //         height: auto;
+                    //         @include smallTip;
+                    //         padding: 6px 5vw;
+                    //         position: absolute;
+                    //         left: 50%;
+                    //         transform: translateX(-50%);
+                    //         bottom: -7.4vw;
+                    //     }
+                    // }
+                }
+
+                p {
+                    margin-top: 2.5vw;
+                    font-size: 1.1rem;
+                    color: $money;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .openBtn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: auto;
+            margin-top: 3.65vw;
+
+            div {
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+                font-weight: bold;
+                color: $title_2;
+                display: flex;
+                align-items: center;
+
+                &.active {
+
+                    .db_arrow {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                .db_arrow {
+                    display: block;
+                    width: 2.9vw;
+                    height: 2.9vw;
+                    margin-left: 1.6vw;
+                    transition: all 0.5s ease;
+                }
+            }
+        }
+    }
+}

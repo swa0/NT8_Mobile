@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">站內信</div>
+            <button class="editBtn display">編輯</button>
+            <button class="detailBtn edit">完成</button>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--站內信上選項-->
+        <div class="topList">
+            <ul>
+                <li class="active">通知</li>
+                <li>公告</li>
+            </ul>
+        </div>
+        <div class="mailBody normal display">
+
+            <!--中選項-->
+            <div class="subClass">
+                <ul>
+                    <li class="active">系統消息</li>
+                    <li>個人消息</li>
+                </ul>
+            </div>
+            <!--編輯-->
+            <div class="editBox">
+                <div class="all">
+                    <input type="checkbox" name="" id="">
+                    全部
+                </div>
+                <div class="modify">
+                    <button>已讀</button>
+                    <button class="delete">刪除</button>
+                </div>
+            </div>
+            <!--內容-->
+            <div class="mailBox system display">
+                <ul>
+                    <li onclick="window.location.href='./mail_page.html'">
+                        <div class="title">標題標題標題標題標題</div>
+                        <div class="textBox">
+                            <p>內文內文內文內文內文內文內文內文內文內文內文</p>
+                            <span class="date">2021/06/16</span>
+                        </div>
+                        <div class="inputBox"><input type="checkbox"></div>
+                    </li>
+                    <li onclick="window.location.href='./mail_page.html'">
+                        <div class="title">標題標題標題標題標題</div>
+                        <div class="textBox">
+                            <p>內文內文內文內文內文內文內文</p>
+                            <span class="date">2021/06/16</span>
+                        </div>
+                        <div class="inputBox"><input type="checkbox"></div>
+                    </li>
+                    <li onclick="window.location.href='./mail_page.html'">
+                        <div class="title">標題標題標題標題標題</div>
+                        <div class="textBox">
+                            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                            <span class="date">2021/06/16</span>
+                        </div>
+                        <div class="inputBox"><input type="checkbox"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="mailBox personal">
+                <ul>
+                    <li class="read" onclick="window.location.href='./mail_page.html'">
+                        <div class="title">標題標題標題標題標題</div>
+                        <div class="textBox">
+                            <p>內文內文內文內文內文內文內文內文內文內文內文</p>
+                            <span class="date">2021/06/16</span>
+                        </div>
+                        <div class="inputBox"><input type="checkbox"></div>
+                    </li>
+                    <li class="read" onclick="window.location.href='./mail_page.html'">
+                        <div class="title">標題標題標題標題標題</div>
+                        <div class="textBox">
+                            <p>內文內文內文內文內文內文內文</p>
+                            <span class="date">2021/06/16</span>
+                        </div>
+                        <div class="inputBox"><input type="checkbox"></div>
+                    </li>
+                    <li class="read" onclick="window.location.href='./mail_page.html'">
+                        <div class="title">標題標題標題標題標題</div>
+                        <div class="textBox">
+                            <p>內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文內文</p>
+                            <span class="date">2021/06/16</span>
+                        </div>
+                        <div class="inputBox"><input type="checkbox"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mailBody post">
+
+            <!--中選項-->
+            <div class="subClass">
+                <ul>
+                    <li class="active">熱門</li>
+                    <li>一般</li>
+                    <li>存款</li>
+                </ul>
+            </div>
+            <!--內容-->
+            <div class="mailBox hot display">
+                <ul>
+                    <li onclick="window.location.href='./mail_page.html'">
+                        <p>標題標題標題標題標題</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="mailBox nor display">
+                <ul>
+                    <li onclick="window.location.href='./mail_page.html'">
+                        <p>標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="mailBox dep display">
+                <ul></ul>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <div class="bg"></div>
+</body>
+</html>

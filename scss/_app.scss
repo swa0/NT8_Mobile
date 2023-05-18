@@ -1,0 +1,61 @@
+// .appWrap {
+//     width: 100%;
+//     height: calc(100vh - 92px);
+//     box-sizing: border-box;
+//     padding: 2.5vw 3.65vw;
+//     background: $backgroundColor_4;
+//     overflow-y: auto;
+
+//     ul {
+//         width: 100%;
+//         height: auto;
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+
+//         li {
+//             width: 45vw;
+//             height: 127px;
+//             box-sizing: border-box;
+//             border-radius: 1.5vw;
+//             padding: 2px;
+//             border: solid 1px $borderColor_2;
+//             background: $backgroundColor_2;
+//             margin-bottom: 5px;
+
+//             img {
+//                 border-radius: 1.5vw 1.5vw 0 0;
+//                 border: solid 1px $borderColor_2;
+//                 box-sizing: border-box;
+//             }
+
+//             p {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-between;
+//                 padding: 0 5vw;
+//                 width: 100%;
+//                 height: auto;
+//                 box-sizing: border-box;
+//                 margin-top: 0.4vw;
+
+//                 span {
+//                     display: inline-block;
+//                     width: calc(100% - 3.65vw);
+//                     white-space: nowrap;
+//                     overflow: hidden;
+//                     text-overflow: ellipsis;
+//                     font-size: 1rem;
+//                     font-weight: bold;
+//                     color: $font-color_2;
+//                 }
+
+//                 .download_ic {
+//                     display: block;
+//                     width: 5vw;
+//                     height: 5vw;
+//                 }
+//             }
+//         }
+//     }
+// }

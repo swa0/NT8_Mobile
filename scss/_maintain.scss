@@ -1,0 +1,70 @@
+.maintainWrap {
+    width: 100%;
+    height: calc(211vw - 15.4vw);
+    background: $mainBG_2;
+    padding: 5vw;
+
+    table {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 0 0 1px $mainBorder_2;
+        
+        tr {
+            border-bottom: solid 1px $mainBorder_1;
+
+            &:first-child,
+            &:last-child {
+                border: none;
+            }
+
+            &:first-child {
+                background: $mainBG_4;
+            }
+
+            th {
+                height: 10.3vw;
+                border-bottom: 1px solid $mainBorder_2;
+                vertical-align: middle;
+
+                &:last-child {
+                
+                    p {
+                        border-right: none;
+                    }
+                }
+
+                p {
+                    color: $title_1;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    border-right: solid 1px $mainBorder_1;
+                }
+            }
+
+            td {
+                width: 33%;
+                height: 10.3vw;
+                background: $mainBG_1;
+                vertical-align: middle;
+
+                &:last-child {
+
+                    p {
+                        border-right: none;
+                    }
+                }
+
+                p {
+                    width: 100%;
+                    text-align: center;
+                    color: $mainWord_3;
+                    font-size: 0.96rem;
+                    font-weight: bold;
+                    border-right: solid 1px $mainBorder_1;
+                }
+            }
+        }
+    }
+}

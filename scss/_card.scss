@@ -1,0 +1,161 @@
+//銀行卡
+.cardList {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 0 2.5vw;
+    background: $mainBG_2;
+
+    .cardBox {
+        width: 100%;
+        height: 45vw;
+        box-sizing: border-box;
+        padding: 0 2.5vw 3.65vw 2.5vw;
+        background: $mainBG_1;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+
+        .title {
+            font-size: 0.95rem;
+            top: 2.5vw;
+            left: 2.5vw;
+            position: absolute;
+            color: $title_2;
+            font-weight: bold;
+
+            span {
+                color: #4954da;
+            }
+        }
+
+        ul {
+            width: 100%;
+            height: auto;
+            display: flex;
+            overflow-y: auto;
+
+            li {
+                width: 54vw;
+                height: 32vw;
+                border-radius: 5px;
+                background: $cardLinear;
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                padding: 3.65vw 0;
+                margin-right: 3.65vw;
+                position: relative;
+
+                &.empty {
+                    background: $cardLinear_Empty;
+                }
+
+                &.wait {
+
+                    .ing {
+                        opacity: 1;
+                    }
+                }
+
+                .add {
+                    width: 100%;
+                    height: 123px;
+                }
+
+                .status {
+                    width: 100%;
+                    text-align: center;
+                    color: $cardWord;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    margin-bottom: 2vw;
+                }
+
+                .innerTitle {
+                    padding-left: 5vw;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    color: $cardWord;
+                }
+
+                .smallTitle {
+                    margin-top: 5vw;
+                    font-size: 0.89rem;
+                    font-weight: bold;
+                    padding-left: 5vw;
+                    color: $cardWord;
+                }
+
+                .account {
+                    margin-top: 6.5vw;
+                    font-size: 5vw;
+                    font-weight: bold;
+                    padding-left: 21px;
+                    color: $cardWord;
+                }
+
+                .ing {
+                    width: 25%;
+                    height: auto;
+                    margin-right: 0.35rem;
+                    @include cardStatus;
+                }
+            }
+        }
+    }
+}
+
+//內容
+.cardContent {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 4vw 4vw 0;
+
+    ul {
+        width: 100%;
+        height: auto;
+
+        li {
+            width: 100%;
+            height: auto;
+            
+            &:first-child {
+
+                .title {
+                    margin: 0 0 2vw;
+                }
+            }
+
+            .title {
+                margin: 3.65vw 0 2vw;
+                font-size: 0.95rem;
+                color: $title_2;
+                font-weight: bold;
+            }
+
+            input {
+                width: 100%;
+                height: 10.3vw;
+                @include mainInput;
+            }
+
+            .remind {
+                margin-top: 2vw;
+                padding-left: 3px;
+                box-sizing: border-box;
+                font-size: 0.85rem;
+                font-weight: bold;
+                color: $remind;
+            }
+        }
+
+        button {
+            width: 87%;
+            height: 10.3vw;
+            margin: 6vw;
+            @include mainBtn_4;
+        }
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content helpPage display">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">常見問題</div>
+        </div>
+        <div class="content helpPage q1">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">常見問題</div>
+        </div>
+        <div class="content helpPage q2">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">遠端協助</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--幫助中心外層-->
+        <div class="helpWrap display">
+            <!--開頭選單-->
+            <div class="helpHeader">
+                <div class="selectBox">
+                    <p>常見問題</p>
+                    <i class="arrow_ic"></i>
+                    <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                        <option value="" disabled>請選擇</option>
+                        <option value="./help_new.html">新手幫助</option>
+                        <option value="./help_often.html" selected>常見問題</option>
+                        <option value="./help_about.html">關於我們</option>
+                        <option value="./app.html">APP下載</option>
+                    </select>
+                </div>
+            </div>
+            <!--內容-->
+            <div class="helpBody">
+                <ul>
+                    <li>常見問題</li>
+                    <li>遠端協助</li>
+                    <li onclick="window.location.href='./help_often_contact.html'">聯絡我們</li>
+                </ul>
+            </div>
+        </div>
+        <!--幫助中心內層-->
+        <div class="helpInner">
+            <ul class="q1">
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>如何註冊帳號</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>加入F7娛樂城，您必須年滿18歲並且同意遵守 條款及條件和 隱私權政策。大多數國家於於法律上對於線上遊戲都有訂定相關的詳細規範，請您務必詳細閱讀並遵守您所在當地的法律條文。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>我該如何存款?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>資金存入您的F7成員帳戶可使用以下方法：</p>
+                        <p>1. 銀行轉帳存款(網路銀行ATM轉帳或實體自動櫃員機ATM轉帳)。</p>
+                        <p>2. 虛擬ATM存款(實體自動櫃員機ATM轉帳)。</p>
+                        <p>3. 超商支付。</p>
+                        <p>作為我們尊貴的客戶，我們會一直努力讓銀行免收取何任費用，讓你不會被我們收取任何在存款時或從您的帳戶中提款時的費用。</p>
+                        <p>除非我們特地提前提醒您，您所要求的特定方法進行過量的存提款。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>我的個人資料安全嗎?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>在這裡我們可確保您的個人資料是安全無虞的，F7娛樂城堅持使用最高等級安全措施及最安全的通訊協定（SSL 128位加密標準），並存儲在最安全的作業環境，並且F7娛樂城永遠不會向任何第三方人員透露您的各項個人資料，敬請放心。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>太久沒登入忘記密碼了怎麼辦?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>若您忘記您密碼，請點選畫面右上方 [ 忘記密碼? ]，填寫您註冊時所使用的行動電話，系統將會寄一組臨時密碼到您的的手機，使用臨時密碼登入後再至會員中心進行密碼修改。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>F7娛樂城支援幾種貨幣呢?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>目前本娛樂城僅支援新台幣，往後將視情況開放人民幣投注。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>F7娛樂城最低投注額是多少?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>最低投注額各個項目有所不同，當您打開每一項遊戲時，遊戲畫面會顯示該項遊戲最低投注額。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>加投注後進行派彩需要多久?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>我們為追求賽果正確性，將以官方結果為依據以最快速度進行結算並派彩，唯獨某些賽事可能發生某些突發狀況導致官方無法公佈正確賽果，而該場賽事將可能會延遲結算程序，以至於延誤派彩。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>申請點數出售交易需要多久完成?</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>F7娛樂城提供24小時，全年無休點數出售交易，並將於您提出交易需求後30分鐘內快速完成。</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q2">
+                <li class="active">
+                    <div class="title">
+                        <i class="icon often"></i>
+                        <p>遠端協助</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>步驟一 : 前往<a href="#">Team-Viewer</a> 官網,下載遠端協助網址。</p>
+                        <p>下載後並執行</p>
+                        <div class="img tv"></div>
+                        <p>步驟二 : 進行安裝，安裝教學流程可參照,遠端協助程式安裝教學。</p>
+                        <p>步驟三 : 將您的【遠端協助ID】與【密碼】，提交給客服人員即可爲您進行遠端協助服務。</p>
+                        <div class="img remote"></div>
+                        <p class="smallTitle">遠端協助</p>
+                        <p>1.下載無需任何費用</p>
+                        <p>2.遠端協助程式使用完畢後即可關閉與卸載，無須擔心安全性問題。</p>
+                        <p>3.可由客服或電腦工程人員爲您遠端操作電腦，妥善協助您查看並解決當前電腦或軟體問題。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li class="active" onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <div class="bg"></div>
+</body>
+</html>

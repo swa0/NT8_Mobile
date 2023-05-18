@@ -1,0 +1,83 @@
+//邀請會員
+.inviteWrap {
+    width: 100%;
+    height: calc(100vh - 96px);
+    overflow-y: auto;
+    background: $mainBG_2;
+    padding-bottom: 2.5vw;
+    box-sizing: border-box;
+
+    ul {
+        width: 100%;
+        height: auto;
+        background: $mainBG_1;
+        margin: 2.5vw 0 3.65vw;
+
+        li {
+            width: 100%;
+            height: 13vw;
+            border-bottom: solid 1px $mainBorder_1;
+            color: $title_1;
+            font-size: 1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3.65vw;
+            box-sizing: border-box;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &.qrCode {
+                height: auto;
+                padding: 2.5vw;
+            }
+
+            p {
+                color: $mainWord_1;
+                display: block;
+                align-items: center;
+
+                button {
+                    width: auto;
+                    height: 7vw;
+                    @include noBgBtn_Normal;
+                    padding: 0 2.5vw;
+                    margin-left: 2.5vw;
+                }
+            }
+
+            .qr {
+                width: 20vw;
+                height: 20vw;
+            }
+        }
+    }
+
+    .imgBox {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.5vw;
+    }
+
+    .textBox {
+        width: 100%;
+        height: auto;
+        padding: 0 3.65vw 3.65vw;
+        box-sizing: border-box;
+
+        p {
+            color: $mainWord_1;
+            font-size: 0.96rem;
+            font-weight: bold;
+            line-height: 5vw;
+            margin-bottom: 2.5vw;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}

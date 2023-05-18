@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content helpPage display">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">APP下載</div>
+        </div>
+        <div class="content helpPage q1">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">歐博真人娛樂</div>
+        </div>
+        <div class="content helpPage q2">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">沙龍真人娛樂</div>
+        </div>
+        <div class="content helpPage q3">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">WM真人娛樂</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--APP下載舊-->
+        <!-- <div class="appWrap">
+            <ul>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+                <li>
+                    <img src="../images/downloadApp.png">
+                    <p>
+                        <span>369體育</span>
+                        <i class="download_ic"></i>
+                    </p>
+                </li>
+            </ul>
+        </div> -->
+        <!--幫助中心外層-->
+        <div class="helpWrap display">
+            <!--開頭選單-->
+            <div class="helpHeader">
+                <div class="selectBox">
+                    <p>APP下載</p>
+                    <i class="arrow_ic"></i>
+                    <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                        <option value="" disabled>請選擇</option>
+                        <option value="./help_new.html">新手幫助</option>
+                        <option value="./help_often.html">常見問題</option>
+                        <option value="./help_about.html">關於我們</option>
+                        <option value="./app.html"select>APP下載</option>
+                    </select>
+                </div>
+            </div>
+            <!--內容-->
+            <div class="helpBody">
+                <ul>
+                    <li>歐博真人娛樂</li>
+                    <li>沙龍真人娛樂</li>
+                    <li>WM真人娛樂</li>
+                </ul>
+            </div>
+        </div>
+        <!--幫助中心內層-->
+        <div class="helpInner">
+            <ul class="q1">
+                <li class="active">
+                    <div class="textBox app">
+                        <p class="smallTitle first">相關說明</p>
+                        <p>下載歐博APP，首次需先進入歐博大廳操作下載，APP只需一次性登入</p>
+                        <p>IOS:可參考下載教學說明安裝到主屏幕</p>
+                        <p>安卓:需進入大廳下載APP</p>
+                        <p>詳細說明請點擊"下載教學說明"查看教學影片</p>
+                        <button class="downloadBtn">下載教學說明</button>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q2">
+                <li class="active">
+                    <div class="textBox app">
+                        <p class="smallTitle first">如何下載使用</p>
+                        <p class="platform">
+                            安卓
+                            <button class="downloadBtn">下載APP</button>
+                        </p>
+                        <p>1. 進入 SA 平臺，點選左上方 [SA APP]</p>
+                        <p>2. 轉跳到下載頁面，點選 [立即下載]->[確定]-> 如果 play protect 已生效，點擊[仍要安裝]->[開啟]</p>
+                        <p>3. 要關閉 play protect，到手機 [設定]->[生物特徵與安全性]-> [Google Play Protect]->[Play Protect 設定]-> 關閉 [掃描裝置中的安全性威脅]</p>
+                        <p>4. 開啟內置二維碼掃描器，到手機 -> [設定]->[應用程式]->[SA APP]->[權限]->[開啟相機權限]</p>
+                        <p class="platform">
+                            IOS
+                            <button class="downloadBtn">下載APP</button>
+                        </p>
+                        <p>1. 進入 SA 平臺，點選左上方 [SA APP]</p>
+                        <p>2. 轉跳到下載頁面，點選 [立即下載]->[安裝]->[安裝完成]</p>
+                        <p>3. 下載完成後，點開 SA APP 會出現 "不受信任的企業級開發者"提示，請到手機 [設定]->[一般]->[裝置管理]->企業級 APP [Beijing Topsec Science and Tech] -> [信任 Beijing Topsec Science and Tech ] ->[信任]</p>
+                        <p>4. 手機權限開啟 -> [設定]->[SA APP]->[開啟相機權限]</p>
+                        <p>*手機下載頁面裡面有 [安裝步驟] [信任企業級開發者] [手機權限開啟] 圖片說明各項使用步驟，讓您安心體驗遊戲</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q3">
+                <li class="active">
+                    <div class="textBox app">
+                        <p class="smallTitle first">相關說明</p>
+                        <p>除了提供線上版本外，您也可以下載行動裝置版本，在您的手機盡情遊戲；或是下載安裝至您的電腦。</p>
+                        <p>當您要透過行動裝置或下載板 玩遊戲時，請注意，必須使用 個人資料 裡的 平台帳號密碼 才能進行登入。</p>
+                        <p class="smallTitle">如何登入</p>
+                        <p>請到 會員中心 > 個人資料 > 平臺帳號密碼 觀看 自己的帳號密碼</p>
+                        <button class="downloadBtn">下載APP</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li class="active" onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <div class="bg"></div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">交易紀錄</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--交易紀錄-->
+        <div class="bettingWrap deal">
+            <div class="recordTop">
+                <ul>
+                    <li class="active">點數紀錄</li>
+                    <li onclick="window.location.href='./dealRecord_water.html'">流水紀錄</li>
+                </ul>
+            </div>
+            <div class="searchContent">
+                <div class="top">
+                    <div class="full">
+                        <p>類型</p>
+                        <div class="selectBox">
+                            <select>
+                                <option value="">存款</option>
+                                <option value="">提款</option>
+                                <option value="">轉帳/活動錢包</option>
+                                <option value="">反水/紅利</option>
+                                <option value="">活動錢包購買紀錄</option>
+                                <option value="">其它</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="full">
+                        <p>選擇日期</p>
+                        <div class="inputBox">
+                            <input type="date">
+                            <span class="chDate"></span>
+                            ~
+                            <input type="date">
+                            <span class="chDate"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="date">
+                    <button>昨天</button>
+                    <button class="active">今天</button>
+                    <button>本週</button>
+                    <button>本月</button>
+                </div>
+                <button class="check">查詢</button>
+            </div>
+            <div class="list">
+                <p class="noData display">目前無資料</p>
+                <div class="recordBox">
+                    <p class="title">
+                        一般錢包 - 轉出
+                        <span class="date">2021-06-16 11:36:09</span>
+                    </p>
+                    <ul>
+                        <li>
+                            交易內容
+                            <p>BNG娱乐->中心錢包</p>
+                        </li>
+                        <li>
+                            金額
+                            <p class="num win">-9161.0000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recordBox">
+                    <p class="title">
+                        一般錢包 - 轉出
+                        <span class="date">2021-06-16 11:36:09</span>
+                    </p>
+                    <ul>
+                        <li>
+                            交易內容
+                            <p>BNG娱乐->中心錢包</p>
+                        </li>
+                        <li>
+                            金額
+                            <p class="num win">8107.5000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recordBox">
+                    <p class="title">
+                        一般錢包 - 轉出
+                        <span class="date">2021-06-16 11:36:09</span>
+                    </p>
+                    <ul>
+                        <li>
+                            交易內容
+                            <p>BNG娱乐->中心錢包</p>
+                        </li>
+                        <li>
+                            金額
+                            <p>9999</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recordBox">
+                    <p class="title">
+                        一般錢包 - 轉出
+                        <span class="date">2021-06-16 11:36:09</span>
+                    </p>
+                    <ul>
+                        <li>
+                            交易內容
+                            <p>BNG娱乐->中心錢包</p>
+                        </li>
+                        <li>
+                            金額
+                            <p>9999</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--帳戶平台彈窗-->
+        <div class="jumpWindow accWindow">
+            <div class="title">
+                帳戶
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="bigBox">
+                    <button class="active">全帳戶</button>
+                </div>
+            </div>
+        </div>
+        <div class="jumpWindow platWindow">
+            <div class="title">
+                平台
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <div class="bigBox">
+                    <button class="active">全平台</button>
+                </div>
+                <div class="smallBox">
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                    <button>BNG娛樂</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

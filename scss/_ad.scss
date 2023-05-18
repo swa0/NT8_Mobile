@@ -1,0 +1,92 @@
+//ad
+.ad {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 1.5vw 3vw;
+
+    .single-item {
+        margin: 0;
+
+        .slick-list {
+            height: 100%;
+
+            .slick-track {
+                height: 100%;
+
+                img {
+                    outline: none;
+                }
+            }
+        }
+        
+        .slick-dots {
+            bottom: 1vw;
+
+            li {
+                margin: 0 0.5vw;
+                
+                button {
+
+                    &::before {
+                        width: 3.2vw;
+                        height: 3.2vw;
+                        background: $ad_BG;
+                        border-radius: 50%;
+                        opacity: 0.5;
+                        color: transparent;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                &.slick-active {
+
+                    button {
+
+                        &::before {
+                            width: 3.2vw;
+                            height: 3.2vw;
+                            opacity: 1;
+                            background: $ad_actBG;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-prev,.slick-next {
+            top: 0;
+            transform: translate(0);
+            width: 13vw;
+            height: 45vw;
+            z-index: 1;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0.8vw;
+                height: 0.8vw;
+                border-style: solid;
+                border-width: 0 0 6px 6px;
+                border-color: transparent;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%) rotate(45deg);
+            }
+        }
+
+        .slick-prev {
+            left: 0;
+        }
+        .slick-next {
+            right: 0;
+
+            &::before {
+                transform: translate(-50%,-50%) rotate(-45deg) scaleX(-1);
+            }
+        }
+    }
+}

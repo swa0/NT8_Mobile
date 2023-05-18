@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <i class="back_arrow" onclick="window.location.href='./wallet.html'"></i>
+            <div class="title">轉帳</div>
+            <button class="detailBtn" onclick="window.location.href='./help_new_transfer.html'">教學</button>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--轉帳-->
+        <div class="transWrap">
+            <div class="wallet">
+                <div class="helf">
+                    <p class="title">
+                        中心錢包
+                        <i class="refresh_ic"></i>
+                        <button>一鍵回收</button>
+                    </p>
+                    <p class="amount">$9879687</p>
+                </div>
+                <!-- <div class="helf">
+                    <p class="title">活動錢包</p>
+                    <p class="amount">$0</p>
+                </div> -->
+            </div>
+            <div class="transBox">
+                <!-- <div class="selectBox">
+                    <p class="smallWord">錢包</p>
+                    <select>
+                        <option value="">中心錢包</option>
+                    </select>
+                </div>
+                <div class="selectBox">
+                    <p class="smallWord">平台</p>
+                    <select>
+                        <option value="">BNG娛樂</option>
+                    </select>
+                </div>
+                <div class="btnBox">
+                    <button class="check">確認轉帳</button>
+                    <button>一鍵回收</button>
+                </div> -->
+                <div class="selectBox">
+                    <p class="smallWord">從</p>
+                    <select>
+                        <option value="">BNG娛樂</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+                <div class="selectBox">
+                    <p class="smallWord">到</p>
+                    <select>
+                        <option value="">中心錢包</option>
+                    </select>
+                    <span class="arrow"></span>
+                </div>
+                <input type="text" value="0">
+                <button class="check" disabled>確認轉帳</button>
+            </div>
+            <!-- <div class="subClass">
+                <ul>
+                    <li>活動錢包</li>
+                    <li class="active">平台帳戶</li>
+                </ul>
+            </div> -->
+            <!-- <div class="forActive">
+                <div class="title">
+                    上次更新時間:2022-01-17 03:06:21
+                    <i class="refresh_ic"></i>
+                </div>
+                <div class="pointBox">
+                    <p class="smallTitle">BNG#88347</p>
+                    <div class="barBox">
+                        <p class="not">積分尚未達標，請繼續努力，繼續加油!(0 / 10880)</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>期限</p>
+                            <p>2025-10-10 13:57:00</p>
+                        </li>
+                        <li>
+                            <p>餘額</p>
+                            <p>318</p>
+                        </li>
+                    </ul>
+                    <div class="pointBtnBox">
+                        <button class="check">查看紀錄</button>
+                        <button>轉入中心錢包</button>
+                    </div>
+                </div>
+            </div> -->
+            <div class="forPlatform display">
+                <div class="title">
+                    上次更新時間:2022-01-17 03:06:21
+                    <!-- <button>一鍵回收</button> -->
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            BNG娛樂
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            pls
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            SimplePlay
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            歐博
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            SG
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            RTG
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            IFUN
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            WM
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            GS
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            必贏
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            36588體育
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            RSG
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                    <li>
+                        <div>
+                            PNG
+                            <i class="smallInfo"></i>
+                        </div>
+                        <p>$0</p>
+                    </li>
+                </ul>
+                <div class="openBtn">
+                    <div>
+                        展開
+                        <i class="db_arrow"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--轉帳資訊-->
+        <div class="jumpWindow plsGo">
+            <div class="title">提示</div>
+            <div class="content">
+                <p>中心錢包:9999已轉移至</p>
+                <p>平台:BNG娛樂</p>
+            </div>
+            <div class="btnBox">
+                <button class="close">確認</button>
+            </div>
+        </div>
+        <!--loading-->
+        <div class="jumpWindow loading">
+            <div class="title">提示</div>
+            <div class="content">
+                <div class="img"></div>
+                <p>loading...</p>
+            </div>
+        </div>
+         <!--注單明細-->
+         <!-- <div class="jumpWindow bettingDetail">
+            <div class="title">
+                注單明細
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <p class="smallTitle">編號 347</p>
+                <div class="mainCnt">
+                    <p class="noData display">目前無資料</p>
+                </div>
+                <div class="pageBox">
+                    <div class="arrowBox">
+                        <i class="prev"></i>
+                        <i class="next"></i>
+                    </div>
+                    <p>共<span>0</span>筆，15筆 / 頁</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>

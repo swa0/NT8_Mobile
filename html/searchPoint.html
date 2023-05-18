@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">查詢紅利</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--投注紀錄-->
+        <div class="bettingWrap">
+            <div class="searchContent">
+                <div class="top">
+                    <div class="full">
+                        <p>選擇日期</p>
+                        <div class="inputBox">
+                            <input type="date">
+                            <span class="chDate"></span>
+                            ~
+                            <input type="date">
+                            <span class="chDate"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="date">
+                    <button>昨天</button>
+                    <button class="active">今天</button>
+                    <button>本週</button>
+                    <button>本月</button>
+                </div>
+                <button class="check">查詢</button>
+            </div>
+            <div class="list">
+                <p class="noData display">目前無資料</p>
+                <div class="recordBox">
+                    <p class="title">
+                        一代會員
+                        <button class="check">查看詳情</button>
+                    </p>
+                    <ul>
+                        <li>
+                            人數
+                            <p class="num">0</p>
+                        </li>
+                        <li>
+                            有效投注
+                            <p class="num">0</p>
+                        </li>
+                        <li>
+                            預估紅利
+                            <p class="num">0</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recordBox">
+                    <p class="title">
+                        二代會員
+                        <button class="check">查看詳情</button>
+                    </p>
+                    <ul>
+                        <li>
+                            人數
+                            <p class="num">0</p>
+                        </li>
+                        <li>
+                            有效投注
+                            <p class="num">0</p>
+                        </li>
+                        <li>
+                            預估紅利
+                            <p class="num">0</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--查看詳情-->
+        <div class="jumpWindow pointWindow">
+            <div class="title">
+                N代會員 - 詳情
+                <i class="close"></i>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="title">
+                        <p>會員帳號</p>
+                        <p>會員名稱</p>
+                    </li>
+                    <li>
+                        <p>ooxx08</p>
+                        <p>蚵仔煎</p>
+                    </li>
+                    <li>
+                        <p>lo0026</p>
+                        <p>Shado</p>
+                    </li>
+                    <li>
+                        <p>tete17</p>
+                        <p>停電</p>
+                    </li>
+                    <li>
+                        <p>sn77888</p>
+                        <p>-</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

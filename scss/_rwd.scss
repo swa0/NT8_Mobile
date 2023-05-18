@@ -1,0 +1,158 @@
+//iPad
+@media only screen and (max-width: 820px){
+
+    .memberArea {
+
+        .loginArea {
+            padding: 7.5vw 2vw 2vw;
+
+            .state {
+                top: 1.8vw;
+            }
+        }
+    }
+
+    .withWrap {
+
+        .walletBox {
+
+            .walletDetail {
+
+                .detailBox {
+    
+                    ul {
+        
+                        li {
+                            width: 29.86vw !important;
+                            margin: 0 1vw 1vw 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .depositWrap {
+        height: calc(100vh + 2vh) !important;
+    }
+
+   .jumpWindow {
+        max-height: 115vw;
+
+        &.plsGo,&.plsGo2 {
+
+            .content {
+               overflow-y: unset;
+            }
+        }
+
+        &.news {
+
+            .content {
+                max-height: 54vw;
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            max-height: 71vw;
+            overflow-y: auto;
+        }
+    }
+}
+
+//iPhone6~8 Plus
+@media only screen and (max-width: 414px){
+
+    .memberArea {
+
+        .loginArea {
+            padding: 6.5vw 2vw 1vw;
+
+            .state {
+                top: 1.6vw;
+            }
+        }
+    }
+
+   .ad {
+    padding: 2.5vw 1.9vw;
+   }
+
+   .jumpWindow {
+     max-height: none;
+
+     .content {
+        max-height: none;
+     }
+   }
+}
+
+//Galaxy S5 + Moto G4
+@media only screen and (max-width: 393px){
+
+    .ad {
+        padding: 1.9vw 2.1vw;
+    }
+
+}
+
+//iPhone5
+@media only screen and (max-width: 375px){
+
+    .ad {
+        padding: 1.1vw 3vw;
+    }
+
+    //首頁轉存提+vip大小調整
+    .operate {
+        
+        .btnBox {
+
+            button {
+                font-size: 3.8vw !important;
+            }
+        }
+    }
+
+    .depositWrap {
+        height: calc(114vh - 171px) !important;
+    }
+}
+
+// //iPhone10
+// @media only screen and (height: 82.9vw){
+
+//     //版面伸展
+//     .homeCenter {
+
+//         .gameList,.gameBox {
+//             height: 52vh;
+//         }
+//     }
+// }
+
+// //Pixel2
+// @media only screen and (height: 731px){
+
+//     //版面伸展
+//     .homeCenter {
+
+//         .gameList,.gameBox {
+//             height: 45vh;
+//         }
+//     }
+// }
+
+// //Pixel2 XL
+// @media only screen and (height: 823px){
+
+//     //版面伸展
+//     .homeCenter {
+
+//         .gameList,.gameBox {
+//             height: 51vh;
+//         }
+//     }
+// }

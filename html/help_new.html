@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content helpPage display">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">新手幫助</div>
+        </div>
+        <div class="content helpPage q1">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">開戶</div>
+        </div>
+        <div class="content helpPage q2">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">存款</div>
+        </div>
+        <div class="content helpPage q3">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">提款</div>
+        </div>
+        <div class="content helpPage q4">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">轉帳</div>
+        </div>
+        <div class="content helpPage q5">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">優惠規則</div>
+        </div>
+        <div class="content helpPage q6">
+            <i class="back_arrow" onclick="backToPage()"></i>
+            <div class="title">流水限制說明</div>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--幫助中心外層-->
+        <div class="helpWrap display">
+            <!--開頭選單-->
+            <div class="helpHeader">
+                <div class="selectBox">
+                    <p>新手幫助</p>
+                    <i class="arrow_ic"></i>
+                    <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                        <option value="" disabled>請選擇</option>
+                        <option value="./help_new.html" selected>新手幫助</option>
+                        <option value="./help_often.html">常見問題</option>
+                        <option value="./help_about.html">關於我們</option>
+                        <option value="./app.html">APP下載</option>
+                    </select>
+                </div>
+            </div>
+            <!--內容-->
+            <div class="helpBody">
+                <ul>
+                    <li>開戶</li>
+                    <li onclick="window.location.href='./help_new_deposit.html'">存款</li>
+                    <li onclick="window.location.href='./help_new_withdrawal.html'">提款</li>
+                    <li onclick="window.location.href='./help_new_transfer.html'">轉帳</li>
+                    <li>優惠規則</li>
+                    <li>流水限制說明</li>
+                </ul>
+            </div>
+        </div>
+        <!--幫助中心內層-->
+        <div class="helpInner">
+            <ul class="q1">
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>如何註冊帳號</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>1.點擊網站右上角“登入註冊”的功能鍵；</p>
+                        <p>2.進入註冊頁面，填寫用戶名和密碼信息即可成功註冊；</p>
+                        <p>3.註冊前請確保您已滿18週歲並已閱讀過我們<a href="#">規則與條款</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>在網站註冊之後，我的個人資料信息安全有保障嗎？</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>關於客戶賬戶資料安全，以及客戶隱私權，請參考隱私政策。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>忘記已註冊的用戶名怎麽辦？</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>會員用戶名您可以聯繫我們在線客服團隊，爲您提供必要協助。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>忘記密碼怎麽辦？</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>1.在上方，點擊“忘記密碼”按鈕；</p>
+                        <p>2.進入找回密碼頁面，填寫您的手機號碼獲取新密碼。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>如何更改賬戶密碼？</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>1.請您登錄賬戶後，點擊用戶名，進入“個人資料”；</p>
+                        <p>2.點擊頁面的“修改密碼”，填寫新舊密碼；</p>
+                        <p>3.點擊“確認”即可完成修改。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>登錄賬戶提示被鎖是什麽原因？</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>會員輸入錯誤密碼5次以上，爲了保障會員賬號的安全，系統自動鎖定會員賬號，出現此類問題，建議可以聯繫在線客服團隊進行溝通解除鎖定。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>我可以申請註銷賬戶嗎？</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>暫時不接受任何理由註銷會員賬戶，您可以與在線客服聯繫申請凍結/停用您的會員賬戶。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>怎麽申請更改個人資料信息？</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>客戶成功註冊後，可以通過手機、PC、電腦或其他設備修改個人基本資料信息。如遇任何問題，請諮詢我們在線客服團隊。</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q5">
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>遵守會員規範及法律規定</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>您瞭解您註冊成為會員後，即可使用本公司所提供之各項服務(以下稱本服務)。</p>
+                        <p>當會員使用本服務時，即表示除了同意遵守本服務條款外，還同意接受本公司對會員規範(包括各項遊戲規則、球賽投注規則、公告及注意事項等)及相關法令規定之拘束，本公司AU8所有產品與客戶服務、軟件系統、網絡架構等相關業務事宜，請使用本服務之會員請遵守使用者當地法令之許可，如有違反之情事恕非本服務之負責範圍。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>服務簡介</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>1. 本公司旨在創造一個『安全可靠』、『即時便利』、『公平公正』、『專業營運』的優質娛樂服務平台，強調的讓會員不受時空的限制，24小時隨時上線就可以參與一個公平公正的遊戲，亦可以享受到與世界各地玩家切磋的樂趣，我們秉持以客為尊的態度，不斷開發創新及了解客戶需求是本公司引以為傲的經營理念，翼望能創造出嶄新的娛樂價值以及達到多方普及的目的，成為具有領導指標性的娛樂網站。</p>
+                        <p>2. 虛擬貨幣銀行服務：本公司提供網路金流付費平台，你所購買的點數將可享受符合本公司平台的服務。若您使用虛偽不正之方式進行「儲值」，本公司也將保留隨時終止您會員資格及使用各項服務之權利。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>真實登錄義務</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>基於本公司所提供之各項服務，您同意於註冊時依註冊申請程序所提示之項目，登錄您本人正確、真實及完整之個人資料；當您的個人資料有異動時，請立即更新，以維持您個人資料之正確、真實及完整。如因您登錄不實資料或冒用他人名義以致於侵害他人之權利或違法時，應自負法律責任；您並同意您所提供之個人資料不實或個人資料有異動但沒有更新以致於與原登錄之資料不符時，本公司有權隨時終止您的會員資格及使用各項會員服務之權利。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>服務之停止與更改</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>本公司於下列情形之一時，得暫停或中斷本服務之全部或一部，對於使用者不負擔任何賠償責任：</p>
+                        <p>1. 對於本服務相關系統設備進行遷移、更換或維護時。</p>
+                        <p>2. 因不可歸責於本公司所造成服務停止或中斷。</p>
+                        <p>3. 因不可抗力所造成服務停止或中斷</p>
+                        <p>如因本公司對於本網站相關系統設備進行遷移、更換或維護而必須暫停或中斷全部或一部之服務時，本公司於暫停或中斷前將以電子郵件通知或於本網站上公告。
+                            對於本服務之暫停或中斷，可能造成您使用上的不便、資料遺失或其他經濟及時間上之損失，您平時應採取適當的防護措施，以保障您的權益。
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>保管義務</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>會員有義務妥善保管在本網站之帳號與密碼，並為此組帳號與密碼登入系統後所進行之一切活動負責。為維護會員自身權益，請勿將帳號與密碼洩露或提供予第三人知悉，或出借或轉讓他人使用。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>同意各項球賽及遊戲規則</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>為避免使用者於本平台投注球賽或遊戲時產生爭議，各項規則於遊戲中心和球賽中心均有詳細說明，請務必詳細閱讀本服務所定之各項規則，會員一經開始使用本服務，即被視為已接受所有之規定</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>會員規範之增訂及修改</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>本服務條款如有增訂或修改，您同意自該修訂條款於本網站公告之時起受其拘束，本網站將不對會員個別通知。如您於公告後繼續使用本服務，則視為您已經同意該修訂條款。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>隱私權聲明</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>我們致力為客戶保護隱私並提供一個最安全的遊戲平臺，我們在此網站搜集的資料將會為您提供最卓越的服務，我們不會出賣或租賃您的個人資料給第三方，客戶所提供的個人資料均經過SSL128加密技術處理，並儲存在安全的、非公開的作業系統，對於有機會接觸客戶的個人資料的協助夥伴也必需遵守我們訂立的隱私保密規則。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>免責聲明</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>部份地區或國家法律尚未明定線上博彩的合法性問題，甚至某些地區或國家已明確規範線上博彩為非法行為。我們無意邀請任何人在這些地區或國家非法使用本服務平台。使用者必需確定在您所居住的地區或國家使用線上博彩是否合法，並負完全的責任，使用本服務之會員請遵守使用者當地法令之許可，如有違反之情事恕非本公司之負責範圍。</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="q6">
+                <li class="active">
+                    <div class="title">
+                        <i class="icon new"></i>
+                        <p>流水限制說明</p>
+                        <i class="arrow_ic"></i>
+                    </div>
+                    <div class="textBox">
+                        <p>流水限制 : 充值金額的一倍。例 : 充值5000，則須完成一倍即5000的有效流水(不包含領取優惠活動的流水限制)，如有領取優惠則以該優惠的流水限制額外做計算。</p>
+                        <p>有效流水的定義 : 非平局/平手 的投注，有營利或是虧損的狀態下，不論輸贏都會計算流水。</p>
+                        <p class="remind mar">Q : 領取優惠但未完成流水限制已經輸掉了，怎麼清除流水限制呢?</p>
+                        <p class="remind">A : 注單已全部結算完成，且錢包餘額總和低於10 (包含遊戲館內餘額加總)，在次進行充值，充值完成後，以前的流水限制會自動歸0 。</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li class="active" onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter"></div>
+    <div class="bg"></div>
+</body>
+</html>

@@ -1,0 +1,483 @@
+//我的錢包
+.walletWrap {
+    width: 100%;
+    height: calc(100vh - 15.4vw);
+    background: $mainBG_2;
+    padding-bottom: 2.5vw;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    //上半
+    .walletBox {
+        width: 100%;
+        height: auto;
+        padding: 3.65vw 0;
+        margin-bottom: 2.5vw;
+        background: $mainBG_1;
+
+
+        //漸層
+        .gradient {
+            width: 100%;
+            height: auto;
+
+            .content {
+                @include wordBox;
+                width: 92vw;
+                height: auto;
+                display: block;
+                margin: 0 auto 5.4vw;
+                border-radius: 5px;
+                padding: 0;
+
+                .amount {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    border-bottom: solid 1px $mainBorder_1;
+
+                    .half {
+                        width: 50%;
+                        height: auto;
+                        box-sizing: border-box;
+                        padding: 2.9vw 3.65vw;
+
+                        .title {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 2.5vw;
+                            color: $title_1;
+                            font-size: 0.95rem;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+
+                            // &.all {
+                            //     color: $font-color_10;
+                            // }
+
+                            // .icon {
+                            //     width: 4.27vw;
+                            //     height: 4.27vw;
+                            //     margin-left: 6px;
+                            // }
+                        }
+
+                        .money {
+                            color: $money;
+                            font-size: 1.58rem;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            height: 8vw;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .details {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    // border-bottom: solid 1px $mainBorder_1;
+
+                    .items {
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        box-sizing: border-box;
+                        height: 10.67vw;
+                        padding: 0 3.65vw;
+                        // border-right: solid 1px $borderColor_1;
+
+                        &:nth-of-type(2) {
+                            border: none;
+                        }
+
+                        p {
+                            font-size: 0.95rem;
+                            font-weight: bold;
+                            color: $title_2;
+                            white-space: nowrap;
+
+                            &:nth-of-type(1) {
+                                // width: 40%;
+                                font-size: 0.85rem;
+                                text-align: center;
+                            }
+
+                            &:nth-of-type(2) {
+                                // width: 60%;
+                                text-align: right;
+                                box-sizing: border-box;
+                                padding: 0 2.5vw;
+                                color: $money_Sp;
+                            }
+
+                            // &.mainWallet {
+                            //     color: $font-color_3;
+                            // }
+                            // &.limit {
+                            //     color: $font-color_8;
+                            // }
+                            // &.activeWallet {
+                            //     color: $font-color_11;
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+
+        //轉存提
+        ul {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 12.8vw;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                i {
+                    display: block;
+                    width: 11.47vw;
+                    height: 11.47vw;
+                }
+
+                p {
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    color: $title_2;
+                    padding-top: 6px;
+                }
+            }
+        }
+    }
+
+    //按鈕列
+    // .btnBox {
+    //     width: 100%;
+    //     height: auto;
+    //     box-sizing: border-box;
+    //     display: flex;
+    //     justify-content: center;
+    //     padding: 0 5px 2.5vw;
+
+    //     button {
+    //         width: 46.4vw;
+    //         height: 10.67vw;
+    //         @include buttonStyle_6;
+
+    //         &:nth-of-type(1) {
+    //             border-radius: 1.5vw 0 0 1.5vw;
+    //         }
+    //         &:last-child {
+    //             border-radius: 0 1.5vw 1.5vw 0;
+    //         }
+    //     }
+    // }
+
+    //錢包列
+    .walletList {
+        width: 100%;
+        height: auto;
+        background: $mainBG_1;
+        margin-bottom: 4.15vw;
+
+        // .forActive,
+        // .forHistory {
+        //     padding-bottom: 3.65vw;
+        //     display: none;
+
+        //     &.display {
+        //         display: block;
+        //     }
+
+        //     .title {
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: space-between;
+        //         width: 100%;
+        //         height: auto;
+        //         box-sizing: border-box;
+        //         padding: 8px 3.65vw 0;
+        //         margin-bottom: 11px;
+        //         font-size: 0.85rem;
+        //         letter-spacing: 1px;
+        //         color: $font-color_4;
+        //         font-weight: bold;
+
+        //         .refresh_ic {
+        //             display: block;
+        //             width: 5vw;
+        //             height: 5vw;
+        //         }
+        //     }
+
+        //     .pointBox {
+        //         width: 92.27vw;
+        //         height: auto;
+        //         padding-bottom: 7.4vw;
+        //         margin: 0 auto 14px;
+        //         background: $backgroundColor_2;
+        //         box-shadow: 0 0 5px 0 $boxshadow_2;
+
+        //         .smallTitle {
+        //             display: flex;
+        //             align-items: center;
+        //             box-sizing: border-box;
+        //             height: 10.3vw;
+        //             border-bottom: solid 1px $borderColor_3;
+        //             font-size: 0.89rem;
+        //             font-weight: bold;
+        //             color: $font-color_12;
+        //             padding: 0 3.65vw;
+        //         }
+
+        //         .barBox {
+        //             width: 88vw;
+        //             height: auto;
+        //             box-sizing: border-box;
+        //             padding: 2.5vw 5vw 3.65vw;
+        //             background: $backgroundColor_8;
+        //             border-radius: 3px;
+        //             margin: 2.5vw auto 0;
+        //             display: flex;
+        //             flex-direction: column;
+
+        //             .not {
+        //                 font-size: 0.85rem;
+        //                 font-weight: bold;
+        //                 letter-spacing: 1px;
+        //                 color: $font-color_2;
+        //             }
+        //         }
+
+        //         ul {
+        //             width: 100%;
+        //             height: auto;
+
+        //             li {
+        //                 width: 100%;
+        //                 height: auto;
+        //                 box-sizing: border-box;
+        //                 padding: 2.9vw 0 0 16px;
+        //                 display: flex;
+
+        //                 p {
+        //                     font-size: 0.85rem;
+        //                     letter-spacing: 1px;
+        //                     color: $font-color_8;
+        //                     font-weight: bold;
+
+        //                     &:nth-of-type(1) {
+        //                         margin-right: 5vw;
+        //                     }
+        //                 }
+        //             }
+        //         }
+
+        //         .pointBtnBox {
+        //             display: flex;
+        //             justify-content: space-between;
+        //             box-sizing: border-box;
+        //             width: 100%;
+        //             height: auto;
+        //             padding: 5vw 14px 2.5vw;
+
+        //             button {
+        //                 width: 41.33vw;
+        //                 height: 8.27vw;
+        //                 @include buttonStyle_2;
+        //                 font-size: 0.85rem;
+
+        //                 &.check {
+        //                     @include buttonStyle_3;
+        //                     font-size: 0.85rem;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        .forPlatform {
+            padding-bottom: 3.65vw;
+            display: none;
+
+            &.display {
+                display: block;
+            }
+
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                height: auto;
+                box-sizing: border-box;
+                padding: 2vw 3.65vw 0;
+                margin-bottom: 11px;
+                font-size: 0.85rem;
+                letter-spacing: 1px;
+                color: $title_Time;
+                font-weight: bold;
+
+                button {
+                    width: 18.93vw;
+                    height: 6.13vw;
+                    @include mainBtn_2;
+                    font-size: 0.85rem;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                box-sizing: border-box;
+                max-height: 67.16vw;
+                padding: 0 3.6vw;
+                overflow: hidden;
+
+                &.active {
+                    max-height: none;
+                }
+
+                li {
+                    width: 29.66vw;
+                    min-height: 16.53vw;
+                    @include platformBtn;
+                    box-sizing: border-box;
+                    padding: 2.5vw;
+                    margin: 0 1.9vw 1.9vw 0;
+
+                    &:nth-of-type(3n) {
+                        margin-right: 0;
+                    }
+
+                    div {
+                        font-size: 0.85rem;
+                        letter-spacing: 1px;
+                        color: $title_2;
+                        font-weight: bold;
+                        display: flex;
+                        align-items: center;
+
+                        // .smallInfo {
+                        //     display: block;
+                        //     width: 5vw;
+                        //     height: 5vw;
+                        //     margin-left: 5px;
+                        //     position: relative;
+                        //     opacity: 0;
+                        //     pointer-events: none;
+
+                        //     &.display {
+                        //         opacity: 1;
+                        //         pointer-events: visible;
+                        //     }
+
+                        //     &:hover,&:active,&.active {
+
+                        //         .inner {
+                        //             display: block;
+                        //         }
+                        //     }
+
+                        //     .inner {
+                        //         display: none;
+                        //         width: auto;
+                        //         height: auto;
+                        //         @include smallTip;
+                        //         position: absolute;
+                        //         left: 50%;
+                        //         transform: translateX(-50%);
+                        //         bottom: -7.4vw;
+                        //     }
+                        // }
+                    }
+
+                    p {
+                        margin-top: 2.5vw;
+                        font-size: 1.1rem;
+                        color: $money;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .openBtn {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: auto;
+                margin-top: 3.65vw;
+
+                div {
+                    font-size: 0.85rem;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    color: $title_2;
+                    display: flex;
+                    align-items: center;
+
+                    &.active {
+
+                        .db_arrow {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .db_arrow {
+                        display: block;
+                        width: 2.9vw;
+                        height: 2.9vw;
+                        margin-left: 9px;
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+        }
+    }
+
+    //下方按鈕
+    .options {
+        width: 92vw;
+        height: 13vw;
+        margin: 0 auto 3.9vw;
+        @include longBtn;
+
+        &:active,&.active {
+
+            .betting_ic,.deal_ic {
+                background-position-y: calc(100% - 1px);
+            }
+
+            .arrow_ic {
+                background-position-y: 100%;
+            }
+        }
+
+        .betting_ic,.deal_ic {
+            display: block;
+            width: 6.8vw;
+            height: 8.8vw;
+            margin-right: 4vw;
+        }
+        .deal_ic {
+            background-position-x: 100%;
+        }
+
+        .arrow_ic {
+            display: block;
+            width: 2vw;
+            height: 3.4vw;
+            transform: scaleX(-1);
+        }
+    }
+}

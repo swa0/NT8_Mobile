@@ -1,0 +1,311 @@
+//提款
+.withWrap {
+    width: 100%;
+    min-height: calc(100vh - 15.4VW);
+    height: auto;
+    background: $mainBG_2;
+    padding-bottom: 2.5vw;
+
+    //上半
+    .walletBox {
+        width: 100%;
+        height: auto;
+        padding-bottom: 3.65vw;
+        margin-bottom: 2.5vw;
+        background: $mainBG_1;
+
+        //漸層
+        .gradient {
+            width: 100%;
+            height: auto;
+
+            .content {
+                width: 92vw;
+                height: auto;
+                @include wordBox;
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 3.65vw auto 0;
+                padding: 3.65vw;
+                border-radius: 0;
+
+                .title {
+                    color: $title_1;
+                    font-size: 0.89rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        display: block;
+                        margin-left: 2.5vw;
+                        width: 4.27vw;
+                        height: 4.27vw;
+                    }
+                }
+
+                .amount {
+                    font-size: 1.58rem;
+                    color: $money;
+                    font-weight: bold;
+                    margin-top: 3.65vw;
+                }
+            }
+
+            .detail {
+                width: 100%;
+                height: 18vw;
+                box-sizing: border-box;
+                padding: 0 3.65vw;
+                border-bottom: solid 1px $mainBorder_1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    color: $title_1;
+                    font-size: 0.89rem;
+                    font-weight: bold;
+                    display: flex;
+                    flex-direction: column;
+
+                    button {
+                        width: auto;
+                        height: 6vw;
+                        @include mainBtn_2;
+                        margin-top: 2vw;
+                        font-size: 0.85rem;
+                        white-space: nowrap;
+                        padding: 0 1vw;
+                    }
+
+                    &.num {
+                        color: $mainWord_1;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+
+        .walletDetail {
+            width: 100%;
+            height: 10.3vw;
+            overflow: hidden;
+            margin-top: 2.5vw;
+
+            &.active {
+                height: auto;
+            }
+
+            .check {
+                display: block;
+                margin: 0 auto;
+                width: 92.8vw;
+                height: 10.3vw;
+                @include mainBtn_4;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    @include arrow;
+                    border-color:  #000000 transparent;
+                    position: absolute;
+                    right: 27vw;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            .detailBox {
+                padding-bottom: 3.65vw;
+                margin-top: 2.5vw;
+    
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    box-sizing: border-box;
+                    max-height: 67.16vw;
+                    padding: 0 3.6vw;
+                    overflow: hidden;
+    
+                    &.active {
+                        max-height: none;
+                    }
+    
+                    li {
+                        width: 30.66vw;
+                        min-height: 16.53vw;
+                        box-sizing: border-box;
+                        @include platformBtn;
+                        padding: 2.5vw;
+                        margin: 0 0.26vw 0.26vw 0;
+    
+                        &:nth-of-type(3n) {
+                            margin-right: 0;
+                        }
+    
+                        div {
+                            font-size: 0.85rem;
+                            letter-spacing: 1px;
+                            color: $title_2;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+
+                            .smallInfo {
+                                display: none;
+                                width: 5vw;
+                                height: 5vw;
+                                margin-left: 5px;
+                                position: relative;
+                                opacity: 0;
+                                pointer-events: none;
+        
+                                &.display {
+                                    opacity: 1;
+                                    pointer-events: visible;
+                                }
+        
+                                &:hover,&:active,&.active {
+        
+                                    .inner {
+                                        display: block;
+                                    }
+                                }
+        
+                                .inner {
+                                    display: none;
+                                    width: auto;
+                                    height: auto;
+                                    @include smallTip;
+                                    padding: 6px 5vw;
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    bottom: -7.4vw;
+                                }
+                            }
+                        }
+    
+                        p {
+                            margin-top: 2.5vw;
+                            font-size: 1.1rem;
+                            color: $mainWord_1;
+                            font-weight: bold;
+                        }
+                    }
+                }
+    
+                .openBtn {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    height: auto;
+                    margin-top: 3.65vw;
+    
+                    div {
+                        font-size: 0.85rem;
+                        letter-spacing: 1px;
+                        font-weight: bold;
+                        color: $title_2;
+                        display: flex;
+                        align-items: center;
+    
+                        &.active {
+    
+                            .db_arrow {
+                                transform: rotate(180deg);
+                            }
+                        }
+    
+                        .db_arrow {
+                            display: block;
+                            width: 2.9vw;
+                            height: 2.9vw;
+                            margin-left: 9px;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //下半
+    .withContent {
+        width: 100%;
+        height: auto;
+        background: $mainBG_1;
+        padding: 2.5vw 3.65vw;
+        box-sizing: border-box;
+
+        .remind {
+            width: 100%;
+            height: auto;
+            margin-bottom: 2.5vw;
+            @include wordBox;
+            padding: 2.5vw;
+            font-size: 0.85rem;
+            line-height: 4.8vw;
+        }
+
+        select {
+            width: 100%;
+            height: 10.3vw;
+            @include mainSelect;
+        }
+        
+        .smallRemind {
+            margin-top: 2vw;
+            color: $remind;
+            font-size: 0.85rem;
+            font-weight: bold;
+
+            span {
+                margin-left: 2.5vw;
+            }
+        }
+
+        input {
+            width: 100%;
+            height: 10.3vw;
+            margin-top: 4.5vw;
+            @include mainInput;
+        }
+
+        .check {
+            width: 100%;
+            height: 10.3vw;
+            @include mainBtn_1;
+            margin: 6.5vw 0 2.5vw;
+        }
+    }
+
+    //提醒
+    .remindBox {
+        width: 92.27vw;
+        height: auto;
+        margin: 3.65vw auto;
+        @include remindBox;
+
+        p {
+            font-size: 0.85rem;
+            color: $mainWord_1;
+            font-weight: bold;
+            line-height: 4.8vw;
+            margin-bottom: 2vw;
+
+            &.title {
+                margin-bottom: 2.5vw;
+                font-size: 0.89rem;
+                letter-spacing: 1px;
+                color: $title_1;
+            }
+
+            .sp {
+                color: $remind;
+            }
+        }
+    }
+}

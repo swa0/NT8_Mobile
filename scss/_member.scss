@@ -1,0 +1,610 @@
+//會員中心
+.memberWrap {
+    @include bgStyle_1;
+
+    //玩家資訊
+    .user {
+        width: 100%;
+        height: auto;
+        background: $mainBG_1;
+        padding-bottom: 13px;
+        margin-bottom: 3.65vw;
+
+        .info {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding: 5vw 3.65vw 3.65vw;
+
+            div {
+
+                .account {
+                    color: $mainWord_1;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 2vw;
+
+                    .lv {
+                        width: auto;
+                        height: 5vw;
+                        @include operateLV;
+                        margin-right: 2vw;
+                    }
+                }
+
+                .date {
+                    color: $title_Time;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .infoBtn {
+                width: auto;
+                height: auto;
+                @include mainBtn_3;
+                font-size: 3.4vw;
+                padding: 1.2vw 2.5vw;
+            }
+        }
+
+        .wallet {
+            @include memberWallet;
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 3.65vw 2.9vw;
+            padding: 1vw 1vw 1vw 2vw;
+
+            p {
+                width: 100%;
+                max-width: 64.53vw;
+                font-size: 3.8vw;
+                letter-spacing: 1px;
+                font-weight: bold;
+                line-height: 3.4vw;
+            }
+
+            button {
+                @include mainBtn_2;
+                width: 27.73vw;
+                height: 8.27vw;
+                padding-bottom: 0.5vw;
+            }
+        }
+
+        .btnBox {
+            width: 92.26vw;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            button {
+                width: 49%;
+                height: 18.4vw;
+                @include normalBtn_2;
+
+                .wallet_ic {
+                    width: 8.8vw;
+                    height: 8.8vw;
+                }
+
+                .vip_ic {
+                    width: 8.8vw;
+                    height: 8.8vw;
+                    background-position-x: 100%;
+                }
+
+                .text {
+                    color: $mainWord_3;
+                    font-size: 5vw;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    margin-left: 3.47vw;
+
+                    p {
+                        color: $title_3;
+                        font-size: 3.5vw;
+                        letter-spacing: 1px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        ul {
+            width: 92.26vw;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin: 3.65vw auto 0;
+
+            li {
+                width: 20.53vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                i {
+                    width: 10.4vw;
+                    height: 9.33vw;
+
+                    &.deal_ic {
+                        background-position-x: -10.4vw;
+                    }
+
+                    &.mail_ic {
+                        background-position-x: -20.8vw;
+                    }
+
+                    &.card_ic {
+                        background-position-x: -31.2vw;
+                    }
+                }
+
+                p {
+                    color: $title_2;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    margin-top: 2vw;
+                }
+
+                .bubble {
+                    min-width: 5vw;
+                    min-height: 5vw;
+                    top: -1vw;
+                    right: 2.5vw;
+                    @include mailBubble;
+                }
+            }
+        }
+    }
+
+    //選項條
+    .options {
+        width: 93%;
+        height: 13vw;
+        margin: 0 auto 2.5vw;
+        @include longBtn;
+
+        &.opLang {
+                
+            span {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+
+        &:active,&.active {
+
+            i {
+                background-position-y: 100%;
+
+                &.point_ic {
+                    background-position-y: calc(100% - 1px);
+                }
+            }
+        }
+
+        p {
+            color: $mainWord_1;
+
+            i {
+                width: 8vw;
+                height: 8vw;
+                margin-right: 2vw;
+
+                &:first-child {
+                    margin-right: 3vw;
+                }
+    
+                &.point_ic {
+                    background-position-x: 12%;
+                }
+    
+                &.eventApply_ic {
+                    background-position-x: 25%;
+                }
+    
+                &.help_ic {
+                    background-position-x: 37.5%;
+                }
+    
+                &.about_ic {
+                    background-position-x: 50.5%;
+                }
+    
+                &.app_ic {
+                    background-position-x: 62.5%;
+                }
+    
+                &.lang_ic {
+                    background-position-x: 74.5%;
+                }
+    
+                &.fix_ic {
+                    background-position-x: 87.5%;
+                }
+    
+                &.logout_ic {
+                    background-position-x: 100%;
+                }
+    
+                &.arrow_ic {
+                    width: 2vw;
+                    height: 3.4vw;
+                    transform: scaleX(-1);
+                }
+            }
+        }
+    }
+}
+
+//會員中心內頁滑軸
+.memberList {
+    width: 100%;
+    height: auto;
+
+    ul {
+        width: 100%;
+        height: auto;
+        @include listStyle_1;
+
+        li {
+            width: 50%;
+            height: 10.3vw;
+        }
+    }
+}
+
+//會員中心內頁基本情報
+.memberInfo {
+    width: 100%;
+    height: calc(100vh - 135px);
+    background: $mainBG_2;
+    padding: 2.5vw 0;
+    overflow-y: auto;
+
+    form {
+        width: 100%;
+        height: auto;
+
+        ul {
+            width: 100%;
+            height: auto;
+            background: $mainBG_1;
+            padding-bottom: 2.9vw;
+
+            li {
+                width: 100%;
+                height: 13vw;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                box-sizing: border-box;
+                padding: 0 3.65vw;
+                border-bottom: solid 1px $mainBorder_3;
+
+                &:nth-of-type(2) {
+                    user-select: none;
+                    position: relative;
+
+                    &.active {
+                        height: 13vw;
+                        display: flex;
+                        justify-content: space-between;
+
+                        input {
+                            width: 56vw;
+                            margin-right: 8vw;
+                        }
+
+                        .chDate {
+                            width: 6vw;
+                            height: 6vw;
+                            position: absolute;
+                            right: 5%;
+                        }
+                    }
+                }
+
+                &:not(:nth-of-type(2)){
+                    pointer-events: none;
+                }
+
+                em {
+                    position: relative;
+                    top: -1px;
+
+                    &::before {
+                        content: "※ ";
+                        color: $remind;
+                        padding: 0 1.5vw 0 0;
+                        font-size: 0.89rem;
+                    }
+                }
+
+                span {
+                    width: 24vw;
+                    font-weight: bold;
+                    font-size: 0.89rem;
+                    color: $title_2;
+                    white-space: nowrap;
+                    flex-shrink: 0;
+
+                    &:nth-of-type(2) {
+                        color: $mainWord_1;
+                    }
+                }
+
+                input {
+                    width: 64vw;
+                    height: 10.3vw;
+                    @include memberInput;
+                }
+
+                button {
+                    display: none;
+                    @include mainBtn_1;
+                    width: 100%;
+                    height: 10.3vw;
+                    margin-bottom: 1.5vw;
+                }
+            }
+
+            .chBtn,.saveBtn {
+                display: none;
+                width: 79vw;
+                height: 10.3vw;
+                margin: 2.9vw auto 0;
+                @include mainBtn_4;
+
+                &.display {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .info_1,.info_2 {
+        width: 100%;
+        height: auto;
+        margin: 2.5vw 0 0;
+
+        &.info_2 {
+
+            span {
+                display: flex;
+                align-items: center;
+
+                &:nth-of-type(1) {
+                    width: 30vw;
+                }
+            }
+        }
+
+        ul {
+            width: 100%;
+            height: auto;
+            background: $mainBG_1;
+            
+            li {
+                width: 100%;
+                height: 13vw;
+                padding: 0px 3.65vw;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: solid 1px $mainBorder_1;
+
+                &.forQR {
+                    height: auto;
+                    padding: 2.5vw 3.65vw;
+
+                    span {
+
+                        &:nth-of-type(1) {
+                            width: auto;
+                        }
+                    }
+                }
+
+                span {
+                    font-size: 0.89rem;
+                    font-weight: bold;
+                    color: $title_2;
+
+                    &.empty {
+                        color: $remind;
+                    }
+
+                    &:nth-of-type(1) {
+                        width: 20vw;
+                    }
+
+                    input {
+                        background: none;
+                        border: none;
+                        font-size: 0.89rem;
+                        color: $mainWord_1;
+                    }
+
+                    .copy {
+                        width: auto;
+                        height: 7vw;
+                        @include noBgBtn_Normal;
+                        margin-left: 3.65vw;
+                        padding: 0 2vw;
+                    }
+
+                    .check,.noCheck {
+                        display: inline-block;
+                        width: 3.65vw;
+                        height: 3.65vw;
+                        margin-right: 1.5vw;
+                    }
+
+                    .changePhoneBtn,.changePwdBtn {
+                        background: none;
+                        display: flex;
+                        align-items: center;
+                        font-size: 0.89rem;
+                        font-weight: bold;
+                        color: $title_2;
+                        margin-left: 2.5vw;
+
+                        i {
+                            display: block;
+                            width: 2vw;
+                            height: 3.4vw;
+                            transform: scaleX(-1);
+                            margin-left: 3vw;
+                        }
+                    }
+                }
+
+                .qrCode {
+                    width: 20vw;
+                    height: 20vw;
+                }
+
+                .security {
+                    width: 100%;
+                    height: 10.3vw;
+                    @include wordBox;
+
+                    span {
+                        margin-left: 2.3vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .info_1 {
+
+        ul {
+
+            li {
+
+                span {
+                     
+                    &:nth-of-type(2) {
+                        color: $mainWord_1;
+                    }
+                }
+            }
+        }
+    }
+
+    .info_2 {
+        margin: 0 0 2.5vw;
+    }
+}
+
+//會員中心平台帳戶資訊
+.memberPlatform {
+    width: 100%;
+    background: $mainBG_2;
+    overflow-y: auto;
+    height: calc(100vh - 136px);
+    padding: 2.5vw 4vw;
+    box-sizing: border-box;
+
+    .platformBox {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        border: solid 1px $mainBorder_2;
+        border-radius: 5px;
+        background: $mainBG_1;
+        margin-bottom: 2.5vw;
+
+        .title {
+            width: 100%;
+            height: 9.2vw;
+            background: $mainBG_4;
+            border-bottom: solid 1px $mainBorder_1;
+            box-sizing: border-box;
+            padding: 0 3.65vw;
+            color: $title_1;
+            font-size: 0.89rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            background: $mainBG_1;
+            box-sizing: border-box;
+            padding: 0 3.65vw;
+
+            li {
+                width: 100%;
+                height: 9.2vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    color: $title_2;
+                    font-size: 0.89rem;
+                    font-weight: bold;
+                    white-space: nowarp;
+
+                    &:first-child {
+                        width: 15vw;
+                        justify-content: flex-start;
+                        flex-shrink: 0;
+                    }
+
+                    &:nth-of-type(2) {
+                        width: 100%;
+                        max-width: 50vw;
+                        font-size: 0.85rem;
+                        color: $mainWord_1;
+                        justify-content: center;
+                        @include textHidden;
+                    }
+                }
+                
+                button {
+                    width: 11vw;
+                    height: 7vw;
+                    margin-left: 2.5vw;
+                    flex-shrink: 0;
+                    @include noBgBtn_Normal;
+
+                    &.un {
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <link rel="shortcut icon" href="../images/F7ico_64x64.ico" type="image/x-icon">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <!--content-->
+        <div class="content">
+            <i class="back_arrow" onclick="window.location.href='./member.html'"></i>
+            <div class="title">VIP會員</div>
+            <button class="detailBtn" onclick="window.location.href='./vip_page.html'">VIP詳情</button>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--VIP會員-->
+        <div class="vipWrap">
+            <!--上部-->
+            <div class="topBox">
+                <div class="board">
+                    <div class="content">
+                        <p class="account">普通會員</p>
+                        <div class="textBox">
+                            <span>當前存款</span>
+                            <span>$0</span>
+                            (0/5,000)
+                        </div>
+                        <div class="textBox">
+                            <span>當前積分</span>
+                            <span>$0</span>
+                            (0/50,000)
+                        </div>
+                        <div class="medal"></div>
+                    </div>
+                    <div class="exBar">
+                        <div class="level">
+                            <p class="cur">普通會員</p>
+                            <p>尊龍會員</p>
+                        </div>
+                        <div class="bar">
+                            <div class="cur">
+                                <!-- <div class="percent">20%</div> -->
+                            </div>
+                        </div>
+                        <!-- <div class="btnBox">
+                            <button class="check">查看積分</button>
+                            <button>申請晉級</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="levelBox">
+                    <div><hr></div>
+                    <ul>
+                        <li class="cur">普通</li>
+                        <li>尊龍</li>
+                        <li>白銀</li>
+                        <li>黃金</li>
+                        <li>鉑金</li>
+                        <li>紅寶石</li>
+                        <li>鑽石</li>
+                        <li>王冠</li>
+                    </ul>
+                </div>
+                <div class="cardBox">
+                    <i class="prev"></i>
+                    <div class="card">
+                        <ul>
+                            <li class="vip0">
+                                <div class="medal"></div>
+                                <div class="textBox">
+                                    會員總存金額
+                                    <p>5000.00</p>
+                                </div>
+                                <div class="textBox">
+                                    總投注量
+                                    <p>50000.00</p>
+                                </div>
+                            </li>
+                            <li class="vip1">
+                                <div class="medal v2"></div>
+                                <div class="textBox">
+                                    會員總存金額
+                                    <p>20000.00</p>
+                                </div>
+                                <div class="textBox">
+                                    總投注量
+                                    <p>200000.00</p>
+                                </div>
+                            </li>
+                            <li class="vip2">
+                                <div class="medal v3"></div>
+                                <div class="textBox">
+                                    會員總存金額
+                                    <p>100000.00</p>
+                                </div>
+                                <div class="textBox">
+                                    總投注量
+                                    <p>500000.00</p>
+                                </div>
+                            </li>
+                            <li class="vip3">
+                                <div class="medal v4"></div>
+                                <div class="textBox">
+                                    會員總存金額
+                                    <p>100000.00</p>
+                                </div>
+                                <div class="textBox">
+                                    總投注量
+                                    <p>500000.00</p>
+                                </div>
+                            </li>
+                            <li class="vip4">
+                                <div class="medal v5"></div>
+                                <div class="textBox">
+                                    會員總存金額
+                                    <p>100000.00</p>
+                                </div>
+                                <div class="textBox">
+                                    總投注量
+                                    <p>500000.00</p>
+                                </div>
+                            </li>
+                            <li class="vip5">
+                                <div class="medal v6"></div>
+                                <div class="textBox">
+                                    會員總存金額
+                                    <p>100000.00</p>
+                                </div>
+                                <div class="textBox">
+                                    總投注量
+                                    <p>500000.00</p>
+                                </div>
+                            </li>
+                            <li class="vip6">
+                                <div class="medal v7"></div>
+                                <div class="textBox">
+                                    會員總存金額
+                                    <p>100000.00</p>
+                                </div>
+                                <div class="textBox">
+                                    總投注量
+                                    <p>500000.00</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="next"></i>
+                </div>
+            </div>
+            <!--會員權利-->
+            <div class="enjoyBox">
+                <p class="title">普通會員尊享</p>
+                <ul>
+                    <li>
+                        每日最高存款額度
+                        <p>不限制</p>
+                    </li>
+                    <li>
+                        每日最高提款金額
+                        <p>20000.00</p>
+                    </li>
+                    <li>
+                        每日免費提款次數
+                        <p>2</p>
+                    </li>
+                    <s></s>
+                </ul>
+            </div>
+            <!--查看VIP詳情-->
+            <div class="checkBtn" onclick="window.location.href='./vip_page.html'">
+                <p>查看VIP詳情</p>
+                <i class="arrow_ic"></i>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li onclick="window.location.href='./index_inner.html'">
+                <i class="menu_ic"></i>
+                <p>首頁</p>
+            </li>
+            <li onclick="window.location.href='./event.html'">
+                <i class="event_ic"></i>
+                <p>優惠</p>
+            </li>
+            <li onclick="window.location.href='./wallet.html'">
+                <i class="wallet_ic"></i>
+                <p>存轉提</p>
+            </li>
+            <li onclick="window.location.href='./help_often_contact.html'">
+                <i class="service_ic"></i>
+                <p>客服</p>
+            </li>
+            <li onclick="window.location.href='./member.html'">
+                <i class="center_ic"></i>
+                <p>會員中心</p>
+            </li>
+        </ul>
+    </footer>
+    <!--彈窗-->
+    <div class="filter">
+        <!--查看積分-->
+        <div class="jumpWindow checkPoint">
+            <div class="title">
+                查看積分
+                <i class="close"></i>
+            </div>
+            <div class="total">
+                <p class="smallTitle">當前積分</p>
+                <p class="point">8,980,000</p>
+            </div>
+            <ul>
+                <li>
+                    <div class="name">BNG老虎機</div>
+                    <div class="point">
+                        350,000
+                        <div class="info">1投注 = 3.5積分</div>
+                    </div>
+                    <button>比例查看</button>
+                </li>
+                <li>
+                    <div class="name">BNG老虎機</div>
+                    <div class="point">
+                        350,000
+                        <div class="info">1投注 = 3.5積分</div>
+                    </div>
+                    <button>比例查看</button>
+                </li>
+                <li>
+                    <div class="name">BNG老虎機</div>
+                    <div class="point">
+                        350,000
+                        <div class="info">1投注 = 3.5積分</div>
+                    </div>
+                    <button>比例查看</button>
+                </li>
+                <li>
+                    <div class="name">BNG老虎機</div>
+                    <div class="point">
+                        350,000
+                        <div class="info">1投注 = 3.5積分</div>
+                    </div>
+                    <button>比例查看</button>
+                </li>
+                <li>
+                    <div class="name">BNG老虎機</div>
+                    <div class="point">
+                        350,000
+                        <div class="info">1投注 = 3.5積分</div>
+                    </div>
+                    <button>比例查看</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

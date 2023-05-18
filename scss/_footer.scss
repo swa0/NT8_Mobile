@@ -1,0 +1,56 @@
+//footer
+footer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    ul {
+        width: 100%;
+        height: 15.4vw;
+        @include footerBG;
+
+        li {
+            width: 20%;
+            height: 100%;
+            @include footerWord;
+
+            &.active {
+                background: $footer_actBG;
+            }
+
+            i {
+                width: 7vw;
+                height: 6vw;
+
+                &.menu_ic {
+                    background-position-x: 1px;
+                }
+
+                &.event_ic {
+                    background-position-x: 25%;
+                }
+
+                &.wallet_ic {
+                    background-position-x: 50%;
+                }
+
+                &.service_ic {
+                    background-position-x: 75%;
+                }
+
+                &.center_ic {
+                    background-position-x: 100%;
+                }
+            }
+
+            p {
+                color: $mainWord_2;
+                font-size: 0.85rem;
+                padding-top: 1.5vw;
+            }
+        }
+    }
+}
