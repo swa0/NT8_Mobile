@@ -2089,9 +2089,9 @@ html body .filter .jumpWindow.registerWindow form label .cellphoneCheck.active {
 html body .filter .jumpWindow.registerWindow form label .choose {
   position: absolute;
   width: 14vw;
-  height: 9.3vw;
+  height: 9.6vw;
   left: 0;
-  top: 0.2vw;
+  top: 0;
   z-index: 2;
 }
 html body .filter .jumpWindow.registerWindow form label .choose::before {
