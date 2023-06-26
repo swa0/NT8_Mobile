@@ -63,6 +63,10 @@ $filter: #00000066;
 //彈窗
 $jumpWindowTitle_BG: linear-gradient(0deg, #3c8cef 0%, #35a4e9 96%);
 
+//註冊
+$jChoose_BG: linear-gradient(to top, #d9d9d9 0%, #ededed 50%, #ffffff 100%);
+$jChoose_Border: #889895;
+
 //ad
 $ad_BG: #ffffff;
 $ad_actBG: #34b1ff;
@@ -167,7 +171,6 @@ $lvWrapBtn_BG: #232323;
 
 
 //頁面個別調整
-
 
 //登入頁登入區塊
 @mixin operateLV {

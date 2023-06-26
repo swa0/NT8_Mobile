@@ -345,6 +345,10 @@
                         @include mainInput;
                         background: $mainBG_1;
                         font-size: 0.96rem;
+
+                        &.chooseInput {
+                            padding-left: 16vw;
+                        }
                     }
 
                     &.hasRemind {
@@ -390,6 +394,60 @@
                         right: 0.9vw;
                         @include noBgBtn_Normal;
                     }
+
+                    .choose {
+                        position: absolute;
+                        width: 14vw;
+                        height: 9.3vw;
+                        left: 0;
+                        top: 0.2vw;
+                        z-index: 2;
+
+                        &::before {
+                            content: "";
+                            background: $mainWord_3;
+                            position: absolute;
+                            width: 2px;
+                            height: 5px;
+                            transform: rotate(45deg) translateY(-50%);
+                            top: 50%;
+                            right: 3vw;
+                            z-index: 2;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 2px;
+                            height: 5px;
+                            background: $mainWord_3;
+                            transform: rotate(-45deg) translateY(-50%);
+                            top: 50%;
+                            right: 3vw;
+                        }
+
+                        li {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            background: $jChoose_BG;
+                            border: solid 1px $jChoose_Border;
+                            border-radius: 3px;
+                            position: relative;
+                            box-sizing: border-box;
+
+
+                            span {
+                                width: 6vw;
+                                height: 6vw;
+                                display: block;
+                                position: absolute;
+                                top: 50%;
+                                left: 2vw;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
                 }
 
                 .remind {
@@ -404,6 +462,7 @@
                     width: 65%;
                     height: 11.6vw;
                     @include mainBtn_4;
+                    flex-shrink: 0;
                 }
             }
         }

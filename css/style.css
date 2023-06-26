@@ -39,6 +39,11 @@ footer i {
   background-size: 100%;
 }
 
+.jumpWindow.registerWindow form .choose li span {
+  background: url("../images/icon/choose_ic.png") no-repeat;
+  background-size: 100%;
+}
+
 .jumpWindow .eye {
   background: url("../images/icon/svg/eye.svg") no-repeat;
   background-size: 100%;
@@ -2022,6 +2027,9 @@ html body .filter .jumpWindow.registerWindow form label input::placeholder {
 html body .filter .jumpWindow.registerWindow form label input:focus {
   border-color: #4a4de6;
 }
+html body .filter .jumpWindow.registerWindow form label input.chooseInput {
+  padding-left: 16vw;
+}
 html body .filter .jumpWindow.registerWindow form label.hasRemind {
   margin: 0;
 }
@@ -2078,6 +2086,59 @@ html body .filter .jumpWindow.registerWindow form label .cellphoneCheck.active {
   background: #4a4de6;
   color: #ffffff;
 }
+html body .filter .jumpWindow.registerWindow form label .choose {
+  position: absolute;
+  width: 14vw;
+  height: 9.3vw;
+  left: 0;
+  top: 0.2vw;
+  z-index: 2;
+}
+html body .filter .jumpWindow.registerWindow form label .choose::before {
+  content: "";
+  background: #3a4644;
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+  top: 50%;
+  right: 3vw;
+  z-index: 2;
+}
+html body .filter .jumpWindow.registerWindow form label .choose::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 5px;
+  background: #3a4644;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+          transform: rotate(-45deg) translateY(-50%);
+  top: 50%;
+  right: 3vw;
+}
+html body .filter .jumpWindow.registerWindow form label .choose li {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#d9d9d9), color-stop(50%, #ededed), to(#ffffff));
+  background: linear-gradient(to top, #d9d9d9 0%, #ededed 50%, #ffffff 100%);
+  border: solid 1px #889895;
+  border-radius: 3px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .filter .jumpWindow.registerWindow form label .choose li span {
+  width: 6vw;
+  height: 6vw;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 2vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 html body .filter .jumpWindow.registerWindow form .remind {
   width: 77.33vw;
   margin: 2vw 0 5.06vw;
@@ -2096,6 +2157,8 @@ html body .filter .jumpWindow.registerWindow form .checkBtn {
   border-radius: 3px;
   border: 1px solid #957632;
   letter-spacing: 1px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .filter .jumpWindow.registerWindow form .checkBtn:active, html body .filter .jumpWindow.registerWindow form .checkBtn.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(12%, #eccf89), color-stop(33%, #d3b26c), color-stop(77%, #fff1bb), to(#e2c47d));
