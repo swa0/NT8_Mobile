@@ -2028,7 +2028,7 @@ html body .filter .jumpWindow.registerWindow form label input:focus {
   border-color: #4a4de6;
 }
 html body .filter .jumpWindow.registerWindow form label input.chooseInput {
-  padding-left: 16vw;
+  padding-left: 13vw;
 }
 html body .filter .jumpWindow.registerWindow form label.hasRemind {
   margin: 0;
@@ -2088,34 +2088,11 @@ html body .filter .jumpWindow.registerWindow form label .cellphoneCheck.active {
 }
 html body .filter .jumpWindow.registerWindow form label .choose {
   position: absolute;
-  width: 14vw;
+  width: 11vw;
   height: 9.6vw;
   left: 0;
   top: 0;
   z-index: 2;
-}
-html body .filter .jumpWindow.registerWindow form label .choose::before {
-  content: "";
-  background: #3a4644;
-  position: absolute;
-  width: 2px;
-  height: 5px;
-  -webkit-transform: rotate(45deg) translateY(-50%);
-          transform: rotate(45deg) translateY(-50%);
-  top: 50%;
-  right: 3vw;
-  z-index: 2;
-}
-html body .filter .jumpWindow.registerWindow form label .choose::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 5px;
-  background: #3a4644;
-  -webkit-transform: rotate(-45deg) translateY(-50%);
-          transform: rotate(-45deg) translateY(-50%);
-  top: 50%;
-  right: 3vw;
 }
 html body .filter .jumpWindow.registerWindow form label .choose li {
   width: 100%;

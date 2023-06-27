@@ -347,7 +347,7 @@
                         font-size: 0.96rem;
 
                         &.chooseInput {
-                            padding-left: 16vw;
+                            padding-left: 13vw;
                         }
                     }
 
@@ -397,34 +397,11 @@
 
                     .choose {
                         position: absolute;
-                        width: 14vw;
+                        width: 11vw;
                         height: 9.6vw;
                         left: 0;
                         top: 0;
                         z-index: 2; 
-
-                        &::before {
-                            content: "";
-                            background: $mainWord_3;
-                            position: absolute;
-                            width: 2px;
-                            height: 5px;
-                            transform: rotate(45deg) translateY(-50%);
-                            top: 50%;
-                            right: 3vw;
-                            z-index: 2;
-                        }
-
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            width: 2px;
-                            height: 5px;
-                            background: $mainWord_3;
-                            transform: rotate(-45deg) translateY(-50%);
-                            top: 50%;
-                            right: 3vw;
-                        }
 
                         li {
                             width: 100%;
