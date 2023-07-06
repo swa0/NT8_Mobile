@@ -4342,6 +4342,9 @@ html body .memberInfo form ul li:nth-of-type(2) {
           user-select: none;
   position: relative;
 }
+html body .memberInfo form ul li:nth-of-type(2) .chDate {
+  display: none;
+}
 html body .memberInfo form ul li:nth-of-type(2).active {
   height: 13vw;
   display: -webkit-box;
@@ -4358,6 +4361,7 @@ html body .memberInfo form ul li:nth-of-type(2).active input {
 html body .memberInfo form ul li:nth-of-type(2).active .chDate {
   width: 6vw;
   height: 6vw;
+  display: block;
   position: absolute;
   right: 5%;
 }
@@ -4433,6 +4437,8 @@ html body .memberInfo form ul li button {
   border-radius: 3px;
   letter-spacing: 1px;
   width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   height: 10.3vw;
   margin-bottom: 1.5vw;
 }
@@ -4508,9 +4514,22 @@ html body .memberInfo .info_1 ul li.forQR span:nth-of-type(1), html body .member
   width: auto;
 }
 html body .memberInfo .info_1 ul li span, html body .memberInfo .info_2 ul li span {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 0.89rem;
   font-weight: bold;
   color: #4d4d4d;
+  white-space: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .memberInfo .info_1 ul li span.empty, html body .memberInfo .info_2 ul li span.empty {
   color: #f81040;
@@ -4519,6 +4538,7 @@ html body .memberInfo .info_1 ul li span:nth-of-type(1), html body .memberInfo .
   width: 20vw;
 }
 html body .memberInfo .info_1 ul li span input, html body .memberInfo .info_2 ul li span input {
+  width: 100%;
   background: none;
   border: none;
   font-size: 0.89rem;
@@ -4536,6 +4556,8 @@ html body .memberInfo .info_1 ul li span .copy, html body .memberInfo .info_2 ul
   border-radius: 3px;
   margin-left: 3.65vw;
   padding: 0 2vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .memberInfo .info_1 ul li span .copy.active, html body .memberInfo .info_2 ul li span .copy.active {
   background: #4a4de6;
@@ -4571,6 +4593,8 @@ html body .memberInfo .info_1 ul li span .changePhoneBtn i, html body .memberInf
 html body .memberInfo .info_1 ul li .qrCode, html body .memberInfo .info_2 ul li .qrCode {
   width: 20vw;
   height: 20vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .memberInfo .info_1 ul li .security, html body .memberInfo .info_2 ul li .security {
   width: 100%;
@@ -4605,8 +4629,11 @@ html body .memberInfo .info_1 ul li .security .high, html body .memberInfo .info
 html body .memberInfo .info_1 ul li .security span, html body .memberInfo .info_2 ul li .security span {
   margin-left: 2.3vw;
 }
-html body .memberInfo .info_1 ul li span:nth-of-type(2) {
-  color: #000000;
+html body .memberInfo .info_1 ul li:nth-of-type(3) span:nth-of-type(2) {
+  width: calc(100% - 20vw);
+}
+html body .memberInfo .info_1 ul li:nth-of-type(3) span:nth-of-type(2) input {
+  width: 80%;
 }
 html body .memberInfo .info_2 {
   margin: 0 0 2.5vw;
